@@ -71,7 +71,7 @@ const Header = () => {
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 2.5 }}
                 src={logo.src}
-                className="sm:w-20 md:w-20"
+                className="zero:w-10 sm:w-20 md:w-20"
                 alt="Logo"
               />
             </div>
