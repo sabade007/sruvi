@@ -1,3 +1,4 @@
+"use client";
 import { motion } from "framer-motion";
 import bg1 from "../../public/bg.png";
 import Header from "../components/Header";
