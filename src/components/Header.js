@@ -2,6 +2,7 @@ import React from "react";
 import logo from "../../public/logo.png";
 import { motion } from "framer-motion";
 import u from "../../public/u.png";
+import MenuOpenIcon from "@mui/icons-material/MenuOpen";
 
 const Header = () => {
   return (
@@ -42,19 +43,29 @@ const Header = () => {
             <div className="col-span-3 flex flex-col justify-end">
               <div className="flex flex-col grid grid-cols-5 justify-center items-center text-center ">
                 <div>
-                  <h1 className="text-secondary font-fira ">Home</h1>
+                  <h1 className="text-secondary font-fira hover:text-primary hover:cursor-pointer hover:underline hover:scale-110">
+                    Home
+                  </h1>
                 </div>
                 <div>
-                  <h1 className="text-secondary font-fira ">About</h1>
+                  <h1 className="text-secondary font-fira hover:text-primary hover:cursor-pointer hover:underline hover:scale-110">
+                    About
+                  </h1>
                 </div>
                 <div>
-                  <h1 className="text-secondary font-fira ">Services</h1>
+                  <h1 className="text-secondary font-fira hover:text-primary hover:cursor-pointer hover:underline hover:scale-110">
+                    Services
+                  </h1>
                 </div>
                 <div>
-                  <h1 className="text-secondary font-fira ">Technology</h1>
+                  <h1 className="text-secondary font-fira hover:text-primary hover:cursor-pointer hover:underline hover:scale-110 ">
+                    Technology
+                  </h1>
                 </div>
                 <div>
-                  <h1 className="text-secondary font-fira ">Contact</h1>
+                  <h1 className="text-secondary font-fira hover:text-primary hover:cursor-pointer hover:underline hover:scale-110">
+                    Contact
+                  </h1>
                 </div>
               </div>
             </div>
@@ -62,18 +73,40 @@ const Header = () => {
         </div>
       </div>
 
-      <div className="p-4 sm:block md:block lg:hidden xl:hidden">
+      <div className="p-4 zero:block sm:block md:block lg:hidden xl:hidden">
         <div className="shadow-2xl p-4 bg-white bg-opacity-80 ">
-          <div className="flex grid grid-cols-3">
-            <div className="col-span-3 flex flex-col justify-center items-center">
+          <div className="flex grid grid-cols-4">
+            <div className="col-span-3 flex flex-col justify-center ms-4">
               <motion.img
-                initial={{ opacity: 0, x: -50 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 2.5 }}
+                initial={{ opacity: 0, y: -20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 1.5 }}
                 src={logo.src}
-                className="zero:w-10 sm:w-20 md:w-20"
+                className="zero:w-24
+                 sm:w-24 md:w-24"
                 alt="Logo"
               />
+              <div className="flex flex-row items-center">
+                <motion.h1
+                  initial={{ opacity: 0, y: -20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 2.5, delay: 0.5 }}
+                  className="text-black text-lg  font-900  font-fira"
+                >
+                  because its for
+                </motion.h1>
+                <motion.img
+                  initial={{ opacity: 0, scale: 1 }}
+                  animate={{ opacity: 1, scale: [1, 1.5, 1] }}
+                  transition={{ duration: 2, delay: 2.5 }}
+                  src={u.src}
+                  className="h-5 ml-2"
+                  alt="U Icon"
+                />
+              </div>
+            </div>
+            <div className="col-span-1 flex flex-col justify-center items-end">
+              <MenuOpenIcon style={{ fontSize: 30, color: "black" }} />
             </div>
           </div>
         </div>
