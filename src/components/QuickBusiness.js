@@ -94,14 +94,14 @@ const QuickBusiness = () => {
             Our experts are the Trailblazers of Transformation and the
             Navigators of Numbers. From finance to healthcare, we decode
             industry complexities.We map out growth trajectories, avoiding
-            pitfalls and detours.Your business landscape? We've got the
+            pitfalls and detours.Your business landscape? We have got the
             compass.Your goals are our coordinates.
           </h1>
         </div>
 
         <div className="mt-4 flex flex-row justify-between">
           <h1 className="text-black font-bold text-lg font-fira">
-            Ready to Chart Your Course? Let's Talk Business!
+            Ready to Chart Your Course? Lets Talk Business!
           </h1>
           <div className="flex flex-col items-center justify-center">
             <Forward02Icon />

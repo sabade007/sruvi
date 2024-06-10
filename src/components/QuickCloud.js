@@ -35,11 +35,11 @@ const QuickCloud = () => {
           </h1>
 
           <h1 className="text-black text-md font-fira text-justify mt-2">
-            At Sruvi Inc, we don't just chase clouds; we harness their power.
+            At Sruvi Inc, we don not just chase clouds; we harness their power.
             Our developers are the Architects of As-a-Service and the Wizards of
             Web Services. Why settle for one cloud when you can have them all?.
-            DevOps isn't just a buzzword; it's our secret sauce.We automate,
-            orchestrate, and optimize—like clockwork. We're the rhythm section
+            DevOps is not just a buzzword; it is our secret sauce.We automate,
+            orchestrate, and optimize—like clockwork. We are the rhythm section
             of your software symphony.
           </h1>
         </div>
@@ -100,7 +100,7 @@ const QuickCloud = () => {
             Ready to Soar?
           </h1>
           <h1 className="text-black text-md font-fira text-justify">
-            Whether it's scaling, security, or seamless deployments—Sruvi Inc
+            Whether it is scaling, security, or seamless deployments—Sruvi Inc
             has your back.
           </h1>
           <Button

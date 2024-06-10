@@ -105,9 +105,9 @@ const QuickDataBase = () => {
           </h1>
 
           <h1 className="text-black text-md font-fira text-justify mt-2">
-            At Sruvi Inc, we don't just handle data; we orchestrate its
+            At Sruvi Inc, we don not just handle data; we orchestrate its
             symphony. Our developers are the Builders of Bytes and the Curators
-            of Collections. Whether it's SQL, NoSQL, or NewSQL, we speak all
+            of Collections. Whether it is SQL, NoSQL, or NewSQL, we speak all
             dialects. Slow queries? Indexing nightmares? We wave our wands. Your
             data is our sacred trust.
           </h1>
@@ -115,7 +115,7 @@ const QuickDataBase = () => {
 
         <div className="mt-4 flex flex-row justify-between">
           <h1 className="text-black font-bold text-lg font-fira">
-            Ready to Unleash Insights? Let's Talk Data!
+            Ready to Unleash Insights? Lets Talk Data!
           </h1>
           <div className="flex flex-col items-center justify-center">
             <Forward02Icon />
