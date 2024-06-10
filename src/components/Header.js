@@ -3,12 +3,17 @@ import logo from "../../public/logo.png";
 import { motion } from "framer-motion";
 import u from "../../public/u.png";
 import MenuOpenIcon from "@mui/icons-material/MenuOpen";
-
+import HomeIcon from "@mui/icons-material/Home";
+import DesignServicesIcon from "@mui/icons-material/DesignServices";
+import InfoIcon from "@mui/icons-material/Info";
+import IntegrationInstructionsIcon from "@mui/icons-material/IntegrationInstructions";
+import ContactSupportIcon from "@mui/icons-material/ContactSupport";
+import QuickAccess from "./QuickAccess";
 const Header = () => {
   return (
     <div>
-      <div className="p-4 zero:hidden sm:hidden md:hidden lg:block xl:block">
-        <div className="shadow-2xl p-4 bg-white bg-opacity-80 ">
+      <div className="  zero:hidden sm:hidden md:hidden lg:block xl:block  w-full">
+        <div className="shadow-2xl p-4 bg-white bg-opacity-100 ">
           <div className="grid grid-cols-5">
             <div className="col-span-2 flex flex-col justify-center items-center">
               <motion.div>
@@ -42,28 +47,53 @@ const Header = () => {
             </div>
             <div className="col-span-3 flex flex-col justify-end">
               <div className="flex flex-col grid grid-cols-5 justify-center items-center text-center ">
-                <div>
-                  <h1 className="text-secondary font-fira hover:text-primary hover:cursor-pointer hover:underline hover:scale-110">
+                <div className="col-span-1 flex flex-row justify-center items-center hover:scale-110">
+                  <HomeIcon
+                    style={{ marginRight: 5 }}
+                    fontSize="medium"
+                    className="text-primary  "
+                  />
+                  <h1 className="text-secondary lg:text-lg xl:text-xl text-xl font-fira hover:text-primary hover:cursor-pointer hover:underline hover:scale-110 text-bold">
                     Home
                   </h1>
                 </div>
-                <div>
-                  <h1 className="text-secondary font-fira hover:text-primary hover:cursor-pointer hover:underline hover:scale-110">
+                <div className="col-span-1 flex flex-row justify-center items-center hover:scale-110">
+                  <InfoIcon
+                    style={{ marginRight: 5 }}
+                    fontSize="medium"
+                    className="text-primary "
+                  />
+                  <h1 className="text-secondary lg:text-lg xl:text-xl text-xl font-fira hover:text-primary hover:cursor-pointer hover:underline hover:scale-110 text-bold">
                     About
                   </h1>
                 </div>
-                <div>
-                  <h1 className="text-secondary font-fira hover:text-primary hover:cursor-pointer hover:underline hover:scale-110">
+                <div className="col-span-1 flex flex-row justify-center items-center hover:scale-110">
+                  <DesignServicesIcon
+                    style={{ marginRight: 5 }}
+                    fontSize="medium"
+                    className="text-primary "
+                  />
+                  <h1 className="text-secondary lg:text-lg xl:text-xl text-xl font-fira hover:text-primary hover:cursor-pointer hover:underline hover:scale-110 text-bold">
                     Services
                   </h1>
                 </div>
-                <div>
-                  <h1 className="text-secondary font-fira hover:text-primary hover:cursor-pointer hover:underline hover:scale-110 ">
-                    Technology
+                <div className="col-span-1 flex flex-row justify-center items-center hover:scale-110">
+                  <IntegrationInstructionsIcon
+                    style={{ marginRight: 5 }}
+                    fontSize="medium"
+                    className="text-primary "
+                  />
+                  <h1 className="text-secondary lg:text-lg xl:text-xl text-xl font-fira hover:text-primary hover:cursor-pointer hover:underline hover:scale-110 ">
+                    Tech
                   </h1>
                 </div>
-                <div>
-                  <h1 className="text-secondary font-fira hover:text-primary hover:cursor-pointer hover:underline hover:scale-110">
+                <div className="col-span-1 flex flex-row justify-center items-center hover:scale-110">
+                  <ContactSupportIcon
+                    style={{ marginRight: 5 }}
+                    fontSize="medium"
+                    className="text-primary "
+                  />
+                  <h1 className="text-secondary lg:text-lg  xl:text-xltext-xl font-fira hover:text-primary hover:cursor-pointer hover:underline hover:scale-110">
                     Contact
                   </h1>
                 </div>

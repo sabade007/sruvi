@@ -2,10 +2,12 @@
 import { motion } from "framer-motion";
 import bg1 from "../../public/bg.png";
 import Header from "../components/Header";
+import QuickAccess from "../components/QuickAccess";
+import QuickAccess2 from "../components/QuickAccess2";
 export default function Home() {
   return (
     <div
-      className="relative h-screen dark:bg-white overflow-y-auto"
+      className="relative h-screen dark:bg-grey overflow-y-auto"
       style={{
         backgroundImage: `url(${bg1.src})`,
         backgroundPosition: "center",
@@ -14,16 +16,8 @@ export default function Home() {
       }}
     >
       <Header />
-      <motion.div>
-        <motion.h1
-          initial={{ opacity: 0, x: -200 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 2.5, delay: 0.5 }}
-          className="text-4xl text-black font-900 font-fira text-center"
-        >
-          Hello
-        </motion.h1>
-      </motion.div>
+      <QuickAccess />
+      <QuickAccess2 />
     </div>
   );
 }

@@ -9,7 +9,7 @@ const bungee = Bungee({
 });
 const fira = Fira_Sans({
   subsets: ["latin"],
-  weight: "400",
+  weight: ["400", "900", "700"],
   variable: "--font-fira",
 });
 

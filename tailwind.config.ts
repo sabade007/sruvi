@@ -15,8 +15,10 @@ const config: Config = {
       xl: "1440px",
     },
     colors: {
+      grey: "#DDDDDD",
+      greyish: "#F4F4F4",
       primary: "#48C43C",
-      secondary: "#192935",
+      secondary: "#000000",
       white: "#fff",
       black: "#000",
       blue: "#1fb6ff",
@@ -28,6 +30,8 @@ const config: Config = {
       "gray-dark": "#273444",
       gray: "#8492a6",
       "gray-light": "#d3dce6",
+      pp: "#B83CC4",
+      blueblack: "#192935",
     },
     fontFamily: {
       fira: ["var(--font-fira-sans)"],
