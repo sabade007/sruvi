@@ -74,25 +74,23 @@ const QuickDigitalMarketing = () => {
           <div className="flex flex-row items-center">
             <PromotionIcon />
             <h1 className="text-black text-xl  font-bold font-bungee ml-4">
-              Digital Marketing
+              {" Digital Marketing"}
             </h1>
           </div>
           <h1 className="text-black font-bold text-lg font-fira mt-4">
-            Amplify Your Brand with Sruvi Inc!
+            {" Amplify Your Brand with Sruvi Inc!"}
           </h1>
 
           <h1 className="text-black text-md font-fira text-justify mt-2">
-            At Sruvi Inc, we don't just market; we ignite. From SERP domination
-            to organic growth, we're the alchemists of search. Facebook,
-            Instagram, Twitter—we cast our nets wide. Google Ads, Bing Ads—we
-            bid strategically.We predict trends, optimize campaigns, and decode
-            user behavior.
+            {
+              " At Sruvi Inc, we don't just market; we ignite. From SERP domination to organic growth, we're the alchemists of search. Facebook, Instagram, Twitter—we cast our nets wide. Google Ads, Bing Ads—we bid strategically.We predict trends, optimize campaigns, and decode user behavior."
+            }
           </h1>
         </div>
 
         <div className="mt-4 flex flex-row justify-between">
           <h1 className="text-black font-bold text-lg font-fira">
-            Ready to Spark Conversations? Let's Talk Marketing!
+            {"Ready to Spark Conversations? Let's Talk Marketing!"}
           </h1>
           <div className="flex flex-col items-center justify-center">
             <Forward02Icon />

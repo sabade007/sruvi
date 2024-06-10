@@ -120,24 +120,24 @@ const QuickMobile = () => {
           <div className="flex flex-row items-center">
             <MobileProgramming02Icon />
             <h1 className="text-black text-xl  font-bold font-bungee ml-4">
-              Mobile Apps Development
+              {"Mobile Apps Development"}
             </h1>
           </div>
           <h1 className="text-black font-bold text-lg font-fira mt-4">
-            Mobile App Magic Makers
+            {" Mobile App Magic Makers"}
           </h1>
 
           <h1 className="text-black text-md font-fira text-justify mt-2">
-            At Sruvi Inc, our developers don{"'"}t just code; they conjure
-            mobile experiences that leave users spellbound. Our developers are
-            the Picassos of Pixels and the Sculptors of Screens. They carve out
-            sleek, intuitive mobile interfaces. Whether it
-            {"'"}s iOS or Android, we speak both dialects fluently.
+            {
+              "At Sruvi Inc, our developers don't just code; they conjure mobile experiences that leave users spellbound. Our developers are the Picassos of Pixels and the Sculptors of Screens. They carve out sleek, intuitive mobile interfaces. Whether it's iOS or Android, we speak both dialects fluently."
+            }
           </h1>
         </div>
         <div>
-          <h1 className="text-black font-bold text-lg font-fira">Languages:</h1>
-          <h1 className="text-black text-md font-fira">Android</h1>
+          <h1 className="text-black font-bold text-lg font-fira">
+            {"Languages:"}
+          </h1>
+          <h1 className="text-black text-md font-fira">{"Android"}</h1>
           <div className="grid grid-cols-3 mt-4">
             <div className="flex flex-col items-center ">
               <img
@@ -145,7 +145,9 @@ const QuickMobile = () => {
                 alt="java"
                 style={{ width: "24px", height: "24px" }}
               />
-              <h1 className="text-black font-bold text-md font-fira">Java</h1>
+              <h1 className="text-black font-bold text-md font-fira">
+                {"Java"}
+              </h1>
             </div>
             <div className="flex flex-col items-center ">
               <img
@@ -153,7 +155,9 @@ const QuickMobile = () => {
                 alt="kotlin"
                 style={{ width: "24px", height: "24px" }}
               />
-              <h1 className="text-black font-bold text-md font-fira">Kotlin</h1>
+              <h1 className="text-black font-bold text-md font-fira">
+                {"Kotlin"}
+              </h1>
             </div>
             <div className="flex flex-col items-center ">
               <img
@@ -161,18 +165,20 @@ const QuickMobile = () => {
                 alt="dart"
                 style={{ width: "24px", height: "24px" }}
               />
-              <h1 className="text-black font-bold text-md font-fira">Dart</h1>
+              <h1 className="text-black font-bold text-md font-fira">
+                {"Dart"}
+              </h1>
             </div>
           </div>
 
           <h1 className="text-black text-md font-fira mt-4">
-            IOS(Apple Devices)
+            {"IOS(Apple Devices)"}
           </h1>
           <div className="grid grid-cols-3 mt-4">
             <div className="flex flex-col items-center ">
               <CProgrammingIcon />
               <h1 className="text-black font-bold text-md font-fira">
-                Objective-C
+                {" Objective-C"}
               </h1>
             </div>
             <div className="flex flex-col items-center ">
@@ -181,17 +187,19 @@ const QuickMobile = () => {
                 alt="css"
                 style={{ width: "24px", height: "24px" }}
               />
-              <h1 className="text-black font-bold text-md font-fira">swift</h1>
+              <h1 className="text-black font-bold text-md font-fira">
+                {"swift"}
+              </h1>
             </div>
           </div>
           <h1 className="text-black font-bold text-lg font-fira mt-4">
-            FrameWorks:
+            {"FrameWorks:"}
           </h1>
           <div className="grid grid-cols-3 mt-4">
             <div className="flex flex-col items-center ">
               <ReactIcon />
               <h1 className="text-black font-bold text-md font-fira">
-                React Native
+                {" React Native"}
               </h1>
             </div>
             <div className="flex flex-col items-center ">
@@ -201,7 +209,7 @@ const QuickMobile = () => {
                 style={{ width: "24px", height: "24px" }}
               />
               <h1 className="text-black font-bold text-md font-fira">
-                Android SDK
+                {"Android SDK"}
               </h1>
             </div>
             <div className="flex flex-col items-center ">
@@ -211,7 +219,7 @@ const QuickMobile = () => {
                 style={{ width: "24px", height: "24px" }}
               />
               <h1 className="text-black font-bold text-md font-fira">
-                Swift UI
+                {"Swift UI"}
               </h1>
             </div>
           </div>
@@ -219,11 +227,12 @@ const QuickMobile = () => {
 
         <div className="mt-8">
           <h1 className="text-black font-bold text-lg font-fira">
-            Ready to Appify?
+            {"Ready to Appify?"}
           </h1>
           <h1 className="text-black text-md font-fira">
-            Whether it{"'"}s a business app, a game, or a productivity
-            tool—Sruvi Inc has the magic touch.
+            {
+              "Whether it's a business app, a game, or a productivity tool—Sruvi Inc has the magic touch."
+            }
           </h1>
           <Button
             variant="contained"
@@ -233,7 +242,7 @@ const QuickMobile = () => {
             }}
             fullWidth
           >
-            Start Your Mobile Journey
+            {"Start Your Mobile Journey"}
           </Button>
         </div>
       </div>

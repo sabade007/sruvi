@@ -65,25 +65,23 @@ const QuickSeo = () => {
           <div className="flex flex-row items-center">
             <SeoIcon />
             <h1 className="text-black text-xl  font-bold font-bungee ml-4">
-              Search Engine Optimize
+              {"Search Engine Optimize"}
             </h1>
           </div>
           <h1 className="text-black font-bold text-lg font-fira mt-4">
-            Unlock Your Digital Visibility with Sruvi Inc!
+            {"Unlock Your Digital Visibility with Sruvi Inc!"}
           </h1>
 
           <h1 className="text-black text-md font-fira text-justify mt-2">
-            At Sruvi Inc, we don't just optimize; we amplify.Our experts wield
-            keywords like magic spells.Content is our elixir. We brew blogs,
-            infographics, and landing pages.We build bridges across the
-            web—quality backlinks that lead to your domain.Data isn't just
-            numbers; it's our crystal ball.
+            {
+              " At Sruvi Inc, we don't just optimize; we amplify.Our experts wield keywords like magic spells.Content is our elixir. We brew blogs, infographics, and landing pages.We build bridges across the web—quality backlinks that lead to your domain.Data isn't just numbers; it's our crystal ball."
+            }
           </h1>
         </div>
 
         <div className="mt-4 flex flex-row justify-between">
           <h1 className="text-black font-bold text-lg font-fira">
-            Ready to Rise in Rankings? Let's Talk SEO!
+            {" Ready to Rise in Rankings? Let's Talk SEO!"}
           </h1>
           <div className="flex flex-col items-center justify-center">
             <Forward02Icon />

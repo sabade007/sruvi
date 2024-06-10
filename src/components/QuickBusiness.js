@@ -83,25 +83,23 @@ const QuickBusiness = () => {
           <div className="flex flex-row items-center">
             <BriefcaseDollarIcon />
             <h1 className="text-black text-xl  font-bold font-bungee ml-4">
-              Business Consulting
+              {" Business Consulting"}
             </h1>
           </div>
           <h1 className="text-black font-bold text-lg font-fira mt-4">
-            Navigate Success with our Consulting
+            {"Navigate Success with our Consulting"}
           </h1>
 
           <h1 className="text-black text-md font-fira text-justify mt-2">
-            Our experts are the Trailblazers of Transformation and the
-            Navigators of Numbers. From finance to healthcare, we decode
-            industry complexities.We map out growth trajectories, avoiding
-            pitfalls and detours.Your business landscape? We have got the
-            compass.Your goals are our coordinates.
+            {
+              "Our experts are the Trailblazers of Transformation and the Navigators of Numbers. From finance to healthcare, we decode industry complexities.We map out growth trajectories, avoiding pitfalls and detours.Your business landscape? We have got the compass.Your goals are our coordinates."
+            }
           </h1>
         </div>
 
         <div className="mt-4 flex flex-row justify-between">
           <h1 className="text-black font-bold text-lg font-fira">
-            Ready to Chart Your Course? Lets Talk Business!
+            {"Ready to Chart Your Course? Lets Talk Business!"}
           </h1>
           <div className="flex flex-col items-center justify-center">
             <Forward02Icon />

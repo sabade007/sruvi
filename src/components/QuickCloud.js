@@ -27,20 +27,19 @@ const QuickCloud = () => {
               style={{ width: "40px", height: "40px" }}
             />
             <h1 className="text-black text-xl  font-bold font-bungee ml-4">
-              Cloud & Devops
+              {"Cloud & Devops"}
             </h1>
           </div>
           <h1 className="text-black font-bold text-lg font-fira mt-4">
-            Elevate Your Business with Sruvi Inc's Cloud and DevOps expertise
+            {
+              "Elevate Your Business with Sruvi Inc's Cloud and DevOps expertise"
+            }
           </h1>
 
           <h1 className="text-black text-md font-fira text-justify mt-2">
-            At Sruvi Inc, we don not just chase clouds; we harness their power.
-            Our developers are the Architects of As-a-Service and the Wizards of
-            Web Services. Why settle for one cloud when you can have them all?.
-            DevOps is not just a buzzword; it is our secret sauce.We automate,
-            orchestrate, and optimize—like clockwork. We are the rhythm section
-            of your software symphony.
+            {
+              "At Sruvi Inc, we don not just chase clouds; we harness their power. Our developers are the Architects of As-a-Service and the Wizards of Web Services. Why settle for one cloud when you can have them all?. DevOps is not just a buzzword; it is our secret sauce.We automate, orchestrate, and optimize—like clockwork. We are the rhythm section of your software symphony."
+            }
           </h1>
         </div>
         <div>
@@ -53,7 +52,7 @@ const QuickCloud = () => {
                 style={{ width: "24px", height: "24px" }}
               />
               <h1 className="text-black text-md font-fira text-center">
-                Google Firebase
+                {"Google Firebase"}
               </h1>
             </div>
             <div className="flex flex-col items-center ">
@@ -63,7 +62,7 @@ const QuickCloud = () => {
                 style={{ width: "24px", height: "24px" }}
               />
               <h1 className="text-black  text-md font-fira text-center">
-                Microsoft Azure
+                {"Microsoft Azure"}
               </h1>
             </div>
             <div className="flex flex-col items-center ">
@@ -73,7 +72,7 @@ const QuickCloud = () => {
                 style={{ width: "24px", height: "24px" }}
               />
               <h1 className="text-black text-md font-fira text-center">
-                Amazon Web Services
+                {"Amazon Web Services"}
               </h1>
             </div>
           </div>
@@ -97,11 +96,12 @@ const QuickCloud = () => {
 
         <div className="mt-8">
           <h1 className="text-black font-bold text-lg font-fira">
-            Ready to Soar?
+            {" Ready to Soar?"}
           </h1>
           <h1 className="text-black text-md font-fira text-justify">
-            Whether it is scaling, security, or seamless deployments—Sruvi Inc
-            has your back.
+            {
+              " Whether it is scaling, security, or seamless deployments—Sruvi Inc has your back."
+            }
           </h1>
           <Button
             variant="contained"
@@ -111,7 +111,7 @@ const QuickCloud = () => {
             }}
             fullWidth
           >
-            Your digital altitude awaits
+            {"Your digital altitude awaits"}
           </Button>
         </div>
       </div>

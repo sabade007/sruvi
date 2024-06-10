@@ -123,7 +123,7 @@ const Header = () => {
                   transition={{ duration: 2.5, delay: 0.5 }}
                   className="text-black text-lg  font-900  font-fira"
                 >
-                  because its for
+                  {"because it's for"}
                 </motion.h1>
                 <motion.img
                   initial={{ opacity: 0, scale: 1 }}

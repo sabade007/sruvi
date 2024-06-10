@@ -75,13 +75,13 @@ const QuickAccess = () => {
           <div className="flex flex-row items-center">
             <AcUnitIcon className="text-primary" fontSize="large" />
             <h1 className="text-xl text-black font-bold font-bungee ml-2">
-              Quick Access
+              {"Quick Access"}
             </h1>
           </div>
           <h1 className="text-md text-black  font-fira  ml-10">
-            Welcome to our Quick Access page! This single-page summary contains
-            all the essential information you need. Whether you are a visitor or
-            a regular, you will find everything conveniently organized here.
+            {
+              "Welcome to our Quick Access page! This single-page summary contains all the essential information you need. Whether you are a visitor or a regular, you will find everything conveniently organized here."
+            }
           </h1>
         </div>
         <div className="flex grid grid-cols-10 mt-4 gap-4">
@@ -103,16 +103,16 @@ const QuickAccess = () => {
                     style={{ marginRight: 10 }}
                   />
                   <h1 className="text-black text-xl  font-bungee ">
-                    Keep Close, Stay Connected!
+                    {"Keep Close, Stay Connected!"}
                   </h1>
                 </div>
                 <FormHelperText
                   id="my-helper-textss"
                   className="text-justify mb-4"
                 >
-                  We are excited to connect with you! Please take a moment to
-                  share your contact information so that we can reach out to you
-                  promptly.
+                  {
+                    "We are excited to connect with you! Please take a moment to share your contact information so that we can reach out to you promptly."
+                  }
                 </FormHelperText>
 
                 <TextField
@@ -156,7 +156,7 @@ const QuickAccess = () => {
                 />
 
                 <h1 className="text-black font-bold font-fira">
-                  Contact Type:
+                  {"Contact Type:"}
                 </h1>
                 <div className="flex flex-row p-0 mb-4 ">
                   <div
@@ -176,7 +176,7 @@ const QuickAccess = () => {
                         fontWeight: mobileChecked ? "bold" : "normal",
                       }}
                     >
-                      Mobile
+                      {" Mobile"}
                     </h1>
                   </div>
                   <div
@@ -196,7 +196,7 @@ const QuickAccess = () => {
                         fontWeight: emailChecked ? "bold" : "normal",
                       }}
                     >
-                      Email
+                      {" Email"}
                     </h1>
                   </div>
                 </div>
@@ -283,19 +283,19 @@ const QuickAccess = () => {
 
                 {mobileChecked ? (
                   <FormHelperText id="my-helper-text">
-                    We'll never share your Mobile Number.
+                    {" We'll never share your Mobile Number."}
                   </FormHelperText>
                 ) : (
                   <FormHelperText id="my-helper-text">
-                    We'll never share your email.
+                    {"We'll never share your email."}
                   </FormHelperText>
                 )}
 
                 <h1 className="text-black font-bold font-fira">
-                  What are you interested in?
+                  {" What are you interested in?"}
                 </h1>
                 <FormHelperText className="mb-2">
-                  You can select multiple options
+                  {"You can select multiple options"}
                 </FormHelperText>
                 <FormGroup>
                   <div className="flex grid grid-cols-2 gap-4 mb-4">
@@ -314,7 +314,7 @@ const QuickAccess = () => {
                           variant="body1"
                           style={{ color: "#000000", fontSize: 14 }}
                         >
-                          Website Development
+                          {"Website Development"}
                         </Typography>
                       }
                     />
@@ -333,7 +333,7 @@ const QuickAccess = () => {
                           variant="body1"
                           style={{ color: "#000000", fontSize: 14 }}
                         >
-                          Mobile Apps
+                          {"Mobile Apps"}
                         </Typography>
                       }
                     />
@@ -354,7 +354,7 @@ const QuickAccess = () => {
                           variant="body1"
                           style={{ color: "#000000", fontSize: 14 }}
                         >
-                          Custom Software
+                          {"Custom Software"}
                         </Typography>
                       }
                     />
@@ -373,7 +373,7 @@ const QuickAccess = () => {
                           variant="body1"
                           style={{ color: "#000000", fontSize: 14 }}
                         >
-                          Cloud & DevOps
+                          {"Cloud & DevOps"}
                         </Typography>
                       }
                     />
@@ -392,20 +392,20 @@ const QuickAccess = () => {
             <div className=" bg-white h-full flex flex-col justify-around p-4">
               <div className="">
                 <h1 className="text-primary font-bold  font-fira">
-                  Introduction
+                  {" Introduction"}
                 </h1>
                 <h1 className="text-xl text-black font-bold font-bungee mb-2">
-                  You Think It, We Build It
+                  {" You Think It, We Build It"}
                 </h1>
                 <h1 className="text-black font-fira text-justify">
-                  At Sruvi Inc, we are more than lines of code; we are
-                  architects of innovation. Our mission? To transform ideas into
-                  elegant software solutions that propel businesses forward.
+                  {
+                    "At Sruvi Inc, we are more than lines of code; we are architects of innovation. Our mission? To transform ideas into elegant software solutions that propel businesses forward."
+                  }
                 </h1>
               </div>
               <div>
                 <h1 className="text-primary font-fira font-bold">
-                  Why we stand out ?
+                  {"Why we stand out ?"}
                 </h1>
                 <div className="grid grid-cols-2 gap-4">
                   <div className="col-span-1 p-2  items-center flex flex-row">
@@ -416,7 +416,7 @@ const QuickAccess = () => {
                     </div>
 
                     <h1 className="text-black font-bold text-md font-fira ">
-                      Bengaluru Roots, Global Impact
+                      {"Bengaluru Roots, Global Impact"}
                     </h1>
                   </div>
                   <div className=" col-span-1 p-2  items-center flex">
@@ -426,7 +426,7 @@ const QuickAccess = () => {
                       <div className="bg-primary h-1 w-1  rounded"></div>
                     </div>
                     <h1 className="text-black font-bold text-md font-fira ">
-                      Crafting Digital Experiences
+                      {"Crafting Digital Experiences"}
                     </h1>
                   </div>
                   <div className=" col-span-1 p-2  items-center flex">
@@ -436,7 +436,7 @@ const QuickAccess = () => {
                       <div className="bg-primary h-1 w-1  rounded"></div>
                     </div>
                     <h1 className="text-black font-bold text-md font-fira ">
-                      Agile Development, Impeccable Execution
+                      {"Agile Development, Impeccable Execution"}
                     </h1>
                   </div>
                   <div className=" col-span-1 p-2  items-center flex">
@@ -446,7 +446,7 @@ const QuickAccess = () => {
                       <div className="bg-primary h-1 w-1  rounded"></div>
                     </div>
                     <h1 className="text-black font-bold text-md font-fira ">
-                      Innovate, Iterate, Elevate
+                      {"Innovate, Iterate, Elevate"}
                     </h1>
                   </div>
                   <div className=" col-span-1 p-2  items-center flex">
@@ -456,7 +456,7 @@ const QuickAccess = () => {
                       <div className="bg-primary h-1 w-1  rounded"></div>
                     </div>
                     <h1 className="text-black font-bold text-md font-fira">
-                      Client-Centric Approach
+                      {" Client-Centric Approach"}
                     </h1>
                   </div>
                   <div className="col-span-1 p-2  items-center flex">
@@ -466,7 +466,7 @@ const QuickAccess = () => {
                       <div className="bg-primary h-1 w-1  rounded"></div>
                     </div>
                     <h1 className="text-black font-bold text-md font-fira ">
-                      Proprietary Technology
+                      {"Proprietary Technology"}
                     </h1>
                   </div>
                 </div>
@@ -474,9 +474,9 @@ const QuickAccess = () => {
               <div>
                 <h1 className="text-primary font-fira font-bold">Our Team</h1>
                 <h1 className="text-md text-black  font-fira text-justify">
-                  At SRUVI Inc, our team is not just a workforce; we are a
-                  family fueled by passion and purpose. Together, we build the
-                  future—one line of code at a time.
+                  {
+                    "At SRUVI Inc, our team is not just a workforce; we are a family fueled by passion and purpose. Together, we build the future—one line of code at a time."
+                  }
                 </h1>
               </div>
             </div>

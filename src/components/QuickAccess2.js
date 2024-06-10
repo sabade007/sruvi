@@ -97,13 +97,13 @@ const QuickAccess2 = () => {
             <div className="flex flex-row items-center">
               <NanoTechnologyIcon />
               <h1 className="text-black text-xl font-bungee ml-2">
-                Services & Technology
+                {"Services & Technology"}
               </h1>
             </div>
             <h1 className="text-black text-md font-fira ml-12 text-justify">
-              At Sruvi Inc, we harness a diverse set of technologies to create
-              robust and innovative software solutions. Lets explore the key
-              categories and the technologies we excel in:
+              {
+                "At Sruvi Inc, we harness a diverse set of technologies to create robust and innovative software solutions. Lets explore the key categories and the technologies we excel in:"
+              }
             </h1>
 
             <div className="grid grid-cols-2">
