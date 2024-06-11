@@ -1,3 +1,4 @@
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import type { Metadata } from "next";
 import { Bungee, Fira_Sans, Inter } from "next/font/google";
 import "./globals.css";
@@ -25,7 +26,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${bungee.variable} ${fira.variable}`}>
-      <body>{children}</body>
+      <body>
+        {children}
+        <SpeedInsights />
+      </body>
     </html>
   );
 }

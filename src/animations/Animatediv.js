@@ -3,6 +3,7 @@ import { useRef } from "react";
 
 function Animatediv({ children }) {
   const ref = useRef();
+  const inView = useInView(ref);
 
   return (
     <motion.div
