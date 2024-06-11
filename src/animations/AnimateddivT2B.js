@@ -2,7 +2,7 @@ import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import React from "react";
 
-function Animatediv({ children }) {
+const AnimateddivT2B = ({ children }) => {
   const ref = useRef();
   const inView = useInView(ref);
 
@@ -12,16 +12,16 @@ function Animatediv({ children }) {
       initial="hidden"
       animate={inView ? "visible" : "hidden"}
       variants={{
-        visible: { opacity: 1, x: [-20, 20, 0] },
-        hidden: { opacity: 0, x: [-20] },
+        visible: { opacity: 1, y: [-20, 0] },
+        hidden: { opacity: 0, y: 0 },
       }}
-      transition={{ duration: 2 }}
+      transition={{ duration: 1 }}
       viewport={{ once: true }} // Add this line
       style={{ height: "100%" }}
     >
       {children}
     </motion.div>
   );
-}
+};
 
-export default Animatediv;
+export default AnimateddivT2B;

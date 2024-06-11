@@ -22,6 +22,8 @@ import {
   PhoneIphone,
 } from "@mui/icons-material";
 
+import AnimateddivT2B from "../animations/AnimateddivT2B";
+
 const QuickAccess = () => {
   const [mobileChecked, setMobileChecked] = React.useState(true);
   const [emailChecked, setEmailChecked] = React.useState(false);
@@ -71,19 +73,21 @@ const QuickAccess = () => {
   return (
     <div className="zero:hidden sm:hidden md:hidden lg:block xl:block">
       <Container maxWidth="xl" className="p-4">
-        <div className="p-4 bg-white">
-          <div className="flex flex-row items-center">
-            <AcUnitIcon className="text-primary" fontSize="large" />
-            <h1 className="text-xl text-black font-bold font-bungee ml-2">
-              {"Quick Access"}
+        <AnimateddivT2B>
+          <div className="p-4 bg-white">
+            <div className="flex flex-row items-center">
+              <AcUnitIcon className="text-primary" fontSize="large" />
+              <h1 className="text-xl text-black font-bold font-bungee ml-2">
+                {"Quick Access"}
+              </h1>
+            </div>
+            <h1 className="text-md text-black  font-fira  ml-10">
+              {
+                "Welcome to our Quick Access page! This single-page summary contains all the essential information you need. Whether you are a visitor or a regular, you will find everything conveniently organized here."
+              }
             </h1>
           </div>
-          <h1 className="text-md text-black  font-fira  ml-10">
-            {
-              "Welcome to our Quick Access page! This single-page summary contains all the essential information you need. Whether you are a visitor or a regular, you will find everything conveniently organized here."
-            }
-          </h1>
-        </div>
+        </AnimateddivT2B>
         <div className="flex grid grid-cols-10 mt-4 gap-4">
           <div className=" col-span-4 p-4 bg-greyish">
             <div className=" bg-white h-full flex flex-col justify-between p-4">
