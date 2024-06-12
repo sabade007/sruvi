@@ -137,7 +137,7 @@ const QuickAccess = () => {
 
     if (emailChecked) {
       if (email === "") {
-        alert("Please enter your email");
+        alert("Email cannot be empty");
         return;
       }
     }
