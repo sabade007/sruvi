@@ -41,7 +41,9 @@ const QuickDesktop = () => {
             </h1>
           </div>
           <div>
-            <h1 className="text-black font-bold text-md font-fira">Windows</h1>
+            <h1 className="text-black font-bold text-md font-fira">
+              {"Windows"}
+            </h1>
             <div className="grid grid-cols-3 mt-4">
               <div className="flex flex-col items-center ">
                 <img
