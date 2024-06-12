@@ -50,25 +50,7 @@ export default function Home() {
         backgroundRepeat: "no-repeat",
       }}
     >
-      <div className="flex justify-center items-center flex-col p-4 bg-white">
-        <h1 className="text-black text-3xl font-bungee p-2">
-          Hello Pruthviraj
-        </h1>
-        <h1 className="text-black text-2xl font-bungee p-2">
-          How are your Girlfriends
-        </h1>
-        <h1 className="text-black text-xl font-bungee p-2">Are you single</h1>
-        <h1 className="text-black text-lg font-bungee p-2">
-          What are you Doing
-        </h1>
-        <h1 className="text-black text-md font-bungee p-2">
-          How is your old Friend Arjun
-        </h1>
-        <h1 className="text-black text-sm font-bungee p-2">
-          Did you get any Message from Germany
-        </h1>
-      </div>
-      {/* <motion.div ref={headerRef}>
+      <motion.div ref={headerRef}>
         <Header />
       </motion.div>
 
@@ -96,7 +78,7 @@ export default function Home() {
       <QuickAccess />
       <QuickAccess2 />
       <QuickAccess3 />
-      <Footer /> */}
+      <Footer />
     </div>
   );
 }
