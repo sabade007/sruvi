@@ -54,7 +54,7 @@ export default function Home() {
         <Header />
       </motion.div>
 
-      <Link href="/home">
+      <Link href="/homeaa">
         <motion.div
           initial="hidden"
           className="zero:hidden sm:hidden md:hidden lg:block xl:block  cursor-pointer "

@@ -48,7 +48,7 @@ const Header = ({}) => {
             </div>
             <div className="col-span-3 flex flex-col justify-end">
               <div className="flex flex-col grid grid-cols-5 justify-center items-center text-center ">
-                <Link href="/home">
+                <Link href="/homeaa">
                   <div className="col-span-1 flex flex-row justify-center items-center hover:scale-110">
                     <HomeIcon
                       style={{ marginRight: 5 }}
