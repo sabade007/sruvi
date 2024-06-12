@@ -4,7 +4,9 @@ import React from "react";
 
 const AnimateddivT2B = ({ children }) => {
   const ref = useRef();
-  const inView = useInView(ref);
+  const inView = useInView(ref, {
+    once: true,
+  });
 
   return (
     <motion.div

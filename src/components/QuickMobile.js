@@ -6,6 +6,7 @@ import kotlin from "../../public/kotlin.svg";
 import java from "../../public/java.svg";
 import android from "../../public/android.svg";
 import bg1 from "../../public/bg.png";
+import AnimateddivR2L from "@/animations/AnimateddivR2L";
 
 const QuickMobile = () => {
   const MobileProgramming02Icon = (props) => (
@@ -106,147 +107,151 @@ const QuickMobile = () => {
   );
 
   return (
-    <div
-      className="p-4 h-full"
-      style={{
-        backgroundImage: `url(${bg1.src})`,
-        backgroundPosition: "center",
-        backgroundSize: "cover",
-        backgroundRepeat: "no-repeat",
-      }}
-    >
-      <div className="bg-white p-4 h-full flex flex-col justify-between shadow-2xl rounded-lg">
-        <div>
-          <div className="flex flex-row items-center">
-            <MobileProgramming02Icon />
-            <h1 className="text-black text-xl  font-bold font-bungee ml-4">
-              {"Mobile Apps Development"}
+    <AnimateddivR2L>
+      <div
+        className="p-4 h-full"
+        style={{
+          backgroundImage: `url(${bg1.src})`,
+          backgroundPosition: "center",
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
+        }}
+      >
+        <div className="bg-white p-4 h-full flex flex-col justify-between shadow-2xl rounded-lg">
+          <div>
+            <div className="flex flex-row items-center">
+              <MobileProgramming02Icon />
+              <h1 className="text-primary text-2xl tracking-wide font-bungee ml-4">
+                {"Mobile Apps Development"}
+              </h1>
+            </div>
+            <h1 className="text-black font-bold text-lg font-fira mt-4">
+              {" Mobile App Magic Makers"}
+            </h1>
+
+            <h1 className="text-black text-md font-fira text-justify mt-2">
+              {
+                "At Sruvi Inc, our developers don't just code; they conjure mobile experiences that leave users spellbound. Our developers are the Picassos of Pixels and the Sculptors of Screens. They carve out sleek, intuitive mobile interfaces. Whether it's iOS or Android, we speak both dialects fluently."
+              }
             </h1>
           </div>
-          <h1 className="text-black font-bold text-lg font-fira mt-4">
-            {" Mobile App Magic Makers"}
-          </h1>
+          <div>
+            <h1 className="text-black font-bold text-lg font-fira">
+              {"Languages:"}
+            </h1>
+            <h1 className="text-black text-md font-fira">{"Android"}</h1>
+            <div className="grid grid-cols-3 mt-4">
+              <div className="flex flex-col items-center ">
+                <img
+                  src={java.src}
+                  alt="java"
+                  style={{ width: "24px", height: "24px" }}
+                />
+                <h1 className="text-black font-bold text-md font-fira">
+                  {"Java"}
+                </h1>
+              </div>
+              <div className="flex flex-col items-center ">
+                <img
+                  src={kotlin.src}
+                  alt="kotlin"
+                  style={{ width: "24px", height: "24px" }}
+                />
+                <h1 className="text-black font-bold text-md font-fira">
+                  {"Kotlin"}
+                </h1>
+              </div>
+              <div className="flex flex-col items-center ">
+                <img
+                  src={flutter.src}
+                  alt="dart"
+                  style={{ width: "24px", height: "24px" }}
+                />
+                <h1 className="text-black font-bold text-md font-fira">
+                  {"Dart"}
+                </h1>
+              </div>
+            </div>
 
-          <h1 className="text-black text-md font-fira text-justify mt-2">
-            {
-              "At Sruvi Inc, our developers don't just code; they conjure mobile experiences that leave users spellbound. Our developers are the Picassos of Pixels and the Sculptors of Screens. They carve out sleek, intuitive mobile interfaces. Whether it's iOS or Android, we speak both dialects fluently."
-            }
-          </h1>
-        </div>
-        <div>
-          <h1 className="text-black font-bold text-lg font-fira">
-            {"Languages:"}
-          </h1>
-          <h1 className="text-black text-md font-fira">{"Android"}</h1>
-          <div className="grid grid-cols-3 mt-4">
-            <div className="flex flex-col items-center ">
-              <img
-                src={java.src}
-                alt="java"
-                style={{ width: "24px", height: "24px" }}
-              />
-              <h1 className="text-black font-bold text-md font-fira">
-                {"Java"}
-              </h1>
+            <h1 className="text-black text-md font-fira mt-4">
+              {"IOS(Apple Devices)"}
+            </h1>
+            <div className="grid grid-cols-3 mt-4">
+              <div className="flex flex-col items-center ">
+                <CProgrammingIcon />
+                <h1 className="text-black font-bold text-md font-fira">
+                  {" Objective-C"}
+                </h1>
+              </div>
+              <div className="flex flex-col items-center ">
+                <img
+                  src={swift.src}
+                  alt="css"
+                  style={{ width: "24px", height: "24px" }}
+                />
+                <h1 className="text-black font-bold text-md font-fira">
+                  {"swift"}
+                </h1>
+              </div>
             </div>
-            <div className="flex flex-col items-center ">
-              <img
-                src={kotlin.src}
-                alt="kotlin"
-                style={{ width: "24px", height: "24px" }}
-              />
-              <h1 className="text-black font-bold text-md font-fira">
-                {"Kotlin"}
-              </h1>
-            </div>
-            <div className="flex flex-col items-center ">
-              <img
-                src={flutter.src}
-                alt="dart"
-                style={{ width: "24px", height: "24px" }}
-              />
-              <h1 className="text-black font-bold text-md font-fira">
-                {"Dart"}
-              </h1>
+            <h1 className="text-black font-bold text-lg font-fira mt-4">
+              {"FrameWorks:"}
+            </h1>
+            <div className="grid grid-cols-3 mt-4">
+              <div className="flex flex-col items-center ">
+                <ReactIcon />
+                <h1 className="text-black font-bold text-md font-fira">
+                  {" React Native"}
+                </h1>
+              </div>
+              <div className="flex flex-col items-center ">
+                <img
+                  src={android.src}
+                  alt="android"
+                  style={{ width: "24px", height: "24px" }}
+                />
+                <h1 className="text-black font-bold text-md font-fira">
+                  {"Android SDK"}
+                </h1>
+              </div>
+              <div className="flex flex-col items-center ">
+                <img
+                  src={swift.src}
+                  alt="swift"
+                  style={{ width: "24px", height: "24px" }}
+                />
+                <h1 className="text-black font-bold text-md font-fira">
+                  {"Swift UI"}
+                </h1>
+              </div>
             </div>
           </div>
 
-          <h1 className="text-black text-md font-fira mt-4">
-            {"IOS(Apple Devices)"}
-          </h1>
-          <div className="grid grid-cols-3 mt-4">
-            <div className="flex flex-col items-center ">
-              <CProgrammingIcon />
-              <h1 className="text-black font-bold text-md font-fira">
-                {" Objective-C"}
+          <div className="mt-8">
+            <h1 className="text-black font-bold text-lg font-fira">
+              {"Ready to Appify?"}
+            </h1>
+            <h1 className="text-black text-md font-fira">
+              {
+                "Whether it's a business app, a game, or a productivity tool—Sruvi Inc has the magic touch."
+              }
+            </h1>
+            <Button
+              variant="contained"
+              style={{
+                backgroundColor: "#48c43c",
+                marginTop: "10px",
+              }}
+              fullWidth
+            >
+              <h1 className="text-white font-bungee text-lg">
+                {"Start Your Mobile Journey"}
               </h1>
-            </div>
-            <div className="flex flex-col items-center ">
-              <img
-                src={swift.src}
-                alt="css"
-                style={{ width: "24px", height: "24px" }}
-              />
-              <h1 className="text-black font-bold text-md font-fira">
-                {"swift"}
-              </h1>
-            </div>
+            </Button>
           </div>
-          <h1 className="text-black font-bold text-lg font-fira mt-4">
-            {"FrameWorks:"}
-          </h1>
-          <div className="grid grid-cols-3 mt-4">
-            <div className="flex flex-col items-center ">
-              <ReactIcon />
-              <h1 className="text-black font-bold text-md font-fira">
-                {" React Native"}
-              </h1>
-            </div>
-            <div className="flex flex-col items-center ">
-              <img
-                src={android.src}
-                alt="android"
-                style={{ width: "24px", height: "24px" }}
-              />
-              <h1 className="text-black font-bold text-md font-fira">
-                {"Android SDK"}
-              </h1>
-            </div>
-            <div className="flex flex-col items-center ">
-              <img
-                src={swift.src}
-                alt="swift"
-                style={{ width: "24px", height: "24px" }}
-              />
-              <h1 className="text-black font-bold text-md font-fira">
-                {"Swift UI"}
-              </h1>
-            </div>
-          </div>
-        </div>
-
-        <div className="mt-8">
-          <h1 className="text-black font-bold text-lg font-fira">
-            {"Ready to Appify?"}
-          </h1>
-          <h1 className="text-black text-md font-fira">
-            {
-              "Whether it's a business app, a game, or a productivity tool—Sruvi Inc has the magic touch."
-            }
-          </h1>
-          <Button
-            variant="contained"
-            style={{
-              backgroundColor: "#48c43c",
-              marginTop: "10px",
-            }}
-            fullWidth
-          >
-            {"Start Your Mobile Journey"}
-          </Button>
         </div>
       </div>
-    </div>
+    </AnimateddivR2L>
   );
 };
 

@@ -1,5 +1,6 @@
 import React from "react";
 import bg1 from "../../public/bg.png";
+import AnimateddivR2L from "@/animations/AnimateddivR2L";
 
 const QuickSeo = () => {
   const SeoIcon = (props) => (
@@ -51,44 +52,56 @@ const QuickSeo = () => {
     </svg>
   );
   return (
-    <div
-      className="p-4 h-full"
-      style={{
-        backgroundImage: `url(${bg1.src})`,
-        backgroundPosition: "center",
-        backgroundSize: "cover",
-        backgroundRepeat: "no-repeat",
-      }}
-    >
-      <div className="bg-white p-4 h-full flex flex-col justify-between shadow-2xl rounded-lg">
-        <div>
-          <div className="flex flex-row items-center">
-            <SeoIcon />
-            <h1 className="text-black text-xl  font-bold font-bungee ml-4">
-              {"Search Engine Optimize"}
+    <AnimateddivR2L>
+      <div
+        className="p-4 h-full"
+        style={{
+          backgroundImage: `url(${bg1.src})`,
+          backgroundPosition: "center",
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
+        }}
+      >
+        <div className="bg-white p-4 h-full flex flex-col justify-between shadow-2xl rounded-lg">
+          <div>
+            <div className="flex flex-row items-center">
+              <SeoIcon />
+              <h1 className="text-primary text-2xl  tracking-wide font-bungee ml-4">
+                {"Search Engine Optimize"}
+              </h1>
+            </div>
+            <h1 className="text-black font-bold text-lg font-fira mt-4">
+              {"Unlock Your Digital Visibility with Sruvi Inc!"}
+            </h1>
+
+            <h1 className="text-black text-md font-fira text-justify mt-2">
+              {
+                " At Sruvi Inc, we don't just optimize; we amplify.Our experts wield keywords like magic spells.Content is our elixir. We brew blogs, infographics, and landing pages.We build bridges across the web—quality backlinks that lead to your domain.Data isn't just numbers; it's our crystal ball."
+              }
             </h1>
           </div>
-          <h1 className="text-black font-bold text-lg font-fira mt-4">
-            {"Unlock Your Digital Visibility with Sruvi Inc!"}
-          </h1>
 
-          <h1 className="text-black text-md font-fira text-justify mt-2">
-            {
-              " At Sruvi Inc, we don't just optimize; we amplify.Our experts wield keywords like magic spells.Content is our elixir. We brew blogs, infographics, and landing pages.We build bridges across the web—quality backlinks that lead to your domain.Data isn't just numbers; it's our crystal ball."
-            }
-          </h1>
-        </div>
-
-        <div className="mt-4 flex flex-row justify-between">
-          <h1 className="text-black font-bold text-lg font-fira">
-            {" Ready to Rise in Rankings? Let's Talk SEO!"}
-          </h1>
-          <div className="flex flex-col items-center justify-center">
-            <Forward02Icon />
+          <div className="mt-4">
+            <hr
+              style={{
+                width: "100%",
+                height: "1px",
+                backgroundColor: "#48c43c",
+                border: "none",
+              }}
+            />
+            <div className="mt-1 flex flex-row justify-between">
+              <h1 className="text-black  text-lg font-bungee">
+                {" Ready to Rise in Rankings? Let's Talk SEO!"}
+              </h1>
+              <div className="flex flex-col items-center justify-center cursor-pointer">
+                <Forward02Icon />
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </AnimateddivR2L>
   );
 };
 

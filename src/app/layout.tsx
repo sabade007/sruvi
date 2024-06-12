@@ -1,16 +1,16 @@
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import type { Metadata } from "next";
-import { Bungee, Fira_Sans, Inter } from "next/font/google";
+import { Bungee, Fira_Sans, Inter, Righteous, Jura } from "next/font/google";
 import "./globals.css";
 
-const bungee = Bungee({
+const bungee = Righteous({
   subsets: ["latin"],
   weight: "400",
   variable: "--font-bungee",
 });
-const fira = Fira_Sans({
+const fira = Jura({
   subsets: ["latin"],
-  weight: ["400", "900", "700"],
+  weight: ["400", "700"],
   variable: "--font-fira",
 });
 

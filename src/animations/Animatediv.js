@@ -4,7 +4,7 @@ import React from "react";
 
 function Animatediv({ children }) {
   const ref = useRef();
-  const inView = useInView(ref);
+  const inView = useInView(ref, { once: true });
 
   return (
     <motion.div

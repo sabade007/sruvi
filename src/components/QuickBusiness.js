@@ -1,5 +1,6 @@
 import React from "react";
 import bg1 from "../../public/bg.png";
+import AnimateddivR2L from "@/animations/AnimateddivR2L";
 
 const QuickBusiness = () => {
   const BriefcaseDollarIcon = (props) => (
@@ -69,44 +70,56 @@ const QuickBusiness = () => {
     </svg>
   );
   return (
-    <div
-      className="p-4 h-full"
-      style={{
-        backgroundImage: `url(${bg1.src})`,
-        backgroundPosition: "center",
-        backgroundSize: "cover",
-        backgroundRepeat: "no-repeat",
-      }}
-    >
-      <div className="bg-white p-4 h-full flex flex-col justify-between shadow-2xl rounded-lg">
-        <div>
-          <div className="flex flex-row items-center">
-            <BriefcaseDollarIcon />
-            <h1 className="text-black text-xl  font-bold font-bungee ml-4">
-              {" Business Consulting"}
+    <AnimateddivR2L>
+      <div
+        className="p-4 h-full"
+        style={{
+          backgroundImage: `url(${bg1.src})`,
+          backgroundPosition: "center",
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
+        }}
+      >
+        <div className="bg-white p-4 h-full flex flex-col justify-between shadow-2xl rounded-lg">
+          <div>
+            <div className="flex flex-row items-center">
+              <BriefcaseDollarIcon />
+              <h1 className="text-primary text-2xl  tracking-wide font-bungee ml-4">
+                {" Business Consulting"}
+              </h1>
+            </div>
+            <h1 className="text-blueblack font-bold text-lg font-fira mt-4">
+              {"Navigate Success with our Consulting"}
+            </h1>
+
+            <h1 className="text-black text-md font-fira text-justify mt-2">
+              {
+                "Our experts are the Trailblazers of Transformation and the Navigators of Numbers. From finance to healthcare, we decode industry complexities.We map out growth trajectories, avoiding pitfalls and detours.Your business landscape? We have got the compass.Your goals are our coordinates."
+              }
             </h1>
           </div>
-          <h1 className="text-black font-bold text-lg font-fira mt-4">
-            {"Navigate Success with our Consulting"}
-          </h1>
+          <div className="mt-4">
+            <hr
+              style={{
+                width: "100%",
+                height: "1px",
+                backgroundColor: "#48c43c",
+                border: "none",
+              }}
+            />
 
-          <h1 className="text-black text-md font-fira text-justify mt-2">
-            {
-              "Our experts are the Trailblazers of Transformation and the Navigators of Numbers. From finance to healthcare, we decode industry complexities.We map out growth trajectories, avoiding pitfalls and detours.Your business landscape? We have got the compass.Your goals are our coordinates."
-            }
-          </h1>
-        </div>
-
-        <div className="mt-4 flex flex-row justify-between">
-          <h1 className="text-black font-bold text-lg font-fira">
-            {"Ready to Chart Your Course? Lets Talk Business!"}
-          </h1>
-          <div className="flex flex-col items-center justify-center">
-            <Forward02Icon />
+            <div className="mt-1 flex flex-row justify-between">
+              <h1 className="text-black text-lg font-bungee">
+                {"Ready to Chart Your Course? Lets Talk Business!"}
+              </h1>
+              <div className="flex flex-col items-center justify-center cursor-pointer">
+                <Forward02Icon />
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </AnimateddivR2L>
   );
 };
 

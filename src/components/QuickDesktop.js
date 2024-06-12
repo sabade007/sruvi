@@ -26,7 +26,7 @@ const QuickDesktop = () => {
                 alt="visual basic"
                 style={{ width: "40px", height: "40px" }}
               />
-              <h1 className="text-black text-xl  font-bold font-bungee ml-4">
+              <h1 className="text-primary text-2xl  tracking-wide font-bungee ml-4">
                 {"Desktop software"}
               </h1>
             </div>
@@ -89,7 +89,9 @@ const QuickDesktop = () => {
               }}
               fullWidth
             >
-              {"Begin your software overture"}
+              <h1 className="text-white text-lg font-bungee tracking-wide">
+                {"Begin your software overture"}
+              </h1>
             </Button>
           </div>
         </div>

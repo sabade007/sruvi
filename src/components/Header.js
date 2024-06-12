@@ -8,8 +8,9 @@ import DesignServicesIcon from "@mui/icons-material/DesignServices";
 import InfoIcon from "@mui/icons-material/Info";
 import IntegrationInstructionsIcon from "@mui/icons-material/IntegrationInstructions";
 import ContactSupportIcon from "@mui/icons-material/ContactSupport";
-import QuickAccess from "./QuickAccess";
-const Header = () => {
+import Link from "next/link";
+
+const Header = ({}) => {
   return (
     <div>
       <div className="  zero:hidden sm:hidden md:hidden lg:block xl:block  w-full">
@@ -22,7 +23,7 @@ const Header = () => {
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ duration: 2.5 }}
                   src={logo.src}
-                  className="xl:w-32 lg:w-24 "
+                  className="xl:w-36 lg:w-28 "
                   alt="Logo"
                 />
                 <div className="flex flex-row items-center">
@@ -30,7 +31,7 @@ const Header = () => {
                     initial={{ opacity: 0, x: -50 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ duration: 2.5, delay: 0.5 }}
-                    className="text-black text-lg  font-900  font-fira"
+                    className="text-black text-lg    font-bungee"
                   >
                     because its for
                   </motion.h1>
@@ -47,56 +48,67 @@ const Header = () => {
             </div>
             <div className="col-span-3 flex flex-col justify-end">
               <div className="flex flex-col grid grid-cols-5 justify-center items-center text-center ">
-                <div className="col-span-1 flex flex-row justify-center items-center hover:scale-110">
-                  <HomeIcon
-                    style={{ marginRight: 5 }}
-                    fontSize="medium"
-                    className="text-primary  "
-                  />
-                  <h1 className="text-secondary lg:text-lg xl:text-xl text-xl font-fira hover:text-primary hover:cursor-pointer hover:underline hover:scale-110 text-bold">
-                    Home
-                  </h1>
-                </div>
-                <div className="col-span-1 flex flex-row justify-center items-center hover:scale-110">
-                  <InfoIcon
-                    style={{ marginRight: 5 }}
-                    fontSize="medium"
-                    className="text-primary "
-                  />
-                  <h1 className="text-secondary lg:text-lg xl:text-xl text-xl font-fira hover:text-primary hover:cursor-pointer hover:underline hover:scale-110 text-bold">
-                    About
-                  </h1>
-                </div>
-                <div className="col-span-1 flex flex-row justify-center items-center hover:scale-110">
-                  <DesignServicesIcon
-                    style={{ marginRight: 5 }}
-                    fontSize="medium"
-                    className="text-primary "
-                  />
-                  <h1 className="text-secondary lg:text-lg xl:text-xl text-xl font-fira hover:text-primary hover:cursor-pointer hover:underline hover:scale-110 text-bold">
-                    Services
-                  </h1>
-                </div>
-                <div className="col-span-1 flex flex-row justify-center items-center hover:scale-110">
-                  <IntegrationInstructionsIcon
-                    style={{ marginRight: 5 }}
-                    fontSize="medium"
-                    className="text-primary "
-                  />
-                  <h1 className="text-secondary lg:text-lg xl:text-xl text-xl font-fira hover:text-primary hover:cursor-pointer hover:underline hover:scale-110 ">
-                    Tech
-                  </h1>
-                </div>
-                <div className="col-span-1 flex flex-row justify-center items-center hover:scale-110">
-                  <ContactSupportIcon
-                    style={{ marginRight: 5 }}
-                    fontSize="medium"
-                    className="text-primary "
-                  />
-                  <h1 className="text-secondary lg:text-lg  xl:text-xltext-xl font-fira hover:text-primary hover:cursor-pointer hover:underline hover:scale-110">
-                    Contact
-                  </h1>
-                </div>
+                <Link href="/home">
+                  <div className="col-span-1 flex flex-row justify-center items-center hover:scale-110">
+                    <HomeIcon
+                      style={{ marginRight: 5 }}
+                      fontSize="medium"
+                      className="text-primary  "
+                    />
+                    <h1 className="text-secondary lg:text-lg xl:text-xl text-xl font-bungee hover:text-primary hover:cursor-pointer hover:underline hover:scale-110 ">
+                      Home
+                    </h1>
+                  </div>
+                </Link>
+
+                <Link href="/about">
+                  <div className="col-span-1 flex flex-row justify-center items-center hover:scale-110">
+                    <InfoIcon
+                      style={{ marginRight: 5 }}
+                      fontSize="medium"
+                      className="text-primary "
+                    />
+                    <h1 className="text-secondary lg:text-lg xl:text-xl text-xl font-bungee hover:text-primary hover:cursor-pointer hover:underline hover:scale-110 ">
+                      About
+                    </h1>
+                  </div>
+                </Link>
+                <Link href="/services">
+                  <div className="col-span-1 flex flex-row justify-center items-center hover:scale-110 ">
+                    <DesignServicesIcon
+                      style={{ marginRight: 5 }}
+                      fontSize="medium"
+                      className="text-primary "
+                    />
+                    <h1 className="text-secondary lg:text-lg xl:text-xl text-xl font-bungee hover:text-primary hover:cursor-pointer hover:underline hover:scale-110 ">
+                      Services
+                    </h1>
+                  </div>
+                </Link>
+                <Link href="/tech">
+                  <div className="col-span-1 flex flex-row justify-center items-center hover:scale-110">
+                    <IntegrationInstructionsIcon
+                      style={{ marginRight: 5 }}
+                      fontSize="medium"
+                      className="text-primary "
+                    />
+                    <h1 className="text-secondary lg:text-lg xl:text-xl text-xl font-bungee hover:text-primary hover:cursor-pointer hover:underline hover:scale-110 ">
+                      Tech
+                    </h1>
+                  </div>
+                </Link>
+                <Link href="/contact">
+                  <div className="col-span-1 flex flex-row justify-center items-center hover:scale-110">
+                    <ContactSupportIcon
+                      style={{ marginRight: 5 }}
+                      fontSize="medium"
+                      className="text-primary "
+                    />
+                    <h1 className="text-secondary lg:text-lg  xl:text-xltext-xl font-bungee hover:text-primary hover:cursor-pointer hover:underline hover:scale-110">
+                      {" Contact"}
+                    </h1>
+                  </div>
+                </Link>
               </div>
             </div>
           </div>
@@ -121,7 +133,7 @@ const Header = () => {
                   initial={{ opacity: 0, y: -20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 2.5, delay: 0.5 }}
-                  className="text-black text-lg  font-900  font-fira"
+                  className="text-black text-lg  font-900  font-bungee"
                 >
                   {"because it's for"}
                 </motion.h1>

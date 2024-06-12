@@ -17,7 +17,7 @@ const QuickAccess2 = () => {
       viewBox="0 0 24 24"
       width={40}
       height={40}
-      color={"#48C43C"}
+      color={"#000000"}
       fill={"none"}
       {...props}
     >
@@ -96,7 +96,7 @@ const QuickAccess2 = () => {
           <div className="bg-white p-4 w-full">
             <div className="flex flex-row items-center">
               <NanoTechnologyIcon />
-              <h1 className="text-black text-xl font-bungee ml-2">
+              <h1 className="text-black text-3xl tracking-wide font-bungee ml-2">
                 {"Services & Technology"}
               </h1>
             </div>

@@ -7,6 +7,8 @@ import php from "../../public/php.png";
 import vue from "../../public/vue.png";
 import python from "../../public/python.svg";
 
+import Animatediv from "@/animations/Animatediv";
+
 const QuickWeb = () => {
   const ReactIcon = (props) => (
     <svg
@@ -203,134 +205,146 @@ const QuickWeb = () => {
     </svg>
   );
   return (
-    <div
-      className="p-4 h-full"
-      style={{
-        backgroundImage: `url(${bg1.src})`,
-        backgroundPosition: "center",
-        backgroundSize: "cover",
-        backgroundRepeat: "no-repeat",
-      }}
-    >
-      <div className="bg-white p-4 h-full flex flex-col justify-between shadow-2xl rounded-lg">
-        <div>
-          <div className="flex flex-row items-center">
-            <WebDesign01Icon />
-            <h1 className="text-black text-xl  font-bold font-bungee ml-4">
-              Web Development
+    <Animatediv>
+      <div
+        className="p-4 h-full"
+        style={{
+          backgroundImage: `url(${bg1.src})`,
+          backgroundPosition: "center",
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
+        }}
+      >
+        <div className="bg-white p-4 h-full flex flex-col justify-between shadow-2xl rounded-lg">
+          <div>
+            <div className="flex flex-row items-center">
+              <WebDesign01Icon />
+              <h1 className="text-primary text-2xl tracking-wide   font-bungee ml-4">
+                Web Development
+              </h1>
+            </div>
+            <h1 className="text-black font-bold text-lg font-fira mt-4">
+              Website Development Wizards
+            </h1>
+
+            <h1 className="text-black text-md font-fira text-justify mt-2">
+              At Sruvi Inc, we don{"'"}t just build websites; we weave digital
+              dreams. Web development is the process of creating, building, and
+              maintaining websites. It involves various tasks, from writing code
+              to designing the user interface UI and ensuring the website runs
+              smoothly on the internet.
             </h1>
           </div>
-          <h1 className="text-black font-bold text-lg font-fira mt-4">
-            Website Development Wizards
-          </h1>
+          <div>
+            <h1 className="text-black font-bold text-lg font-fira">
+              Languages:
+            </h1>
+            <h1 className="text-black text-md font-fira">Front-end:</h1>
+            <div className="grid grid-cols-3 mt-4">
+              <div className="flex flex-col items-center ">
+                <Html5Icon />
+                <h1 className="text-black text-center  text-md font-fira">
+                  HTML
+                </h1>
+              </div>
+              <div className="flex flex-col items-center ">
+                <img
+                  src={css.src}
+                  alt="css"
+                  style={{ width: "24px", height: "24px" }}
+                />
+                <h1 className="text-black text-center text-md font-fira">
+                  CSS
+                </h1>
+              </div>
+              <div className="flex flex-col items-center ">
+                <Html5Icon />
+                <h1 className="text-black text-center text-md font-fira">
+                  JavaScript
+                </h1>
+              </div>
+            </div>
 
-          <h1 className="text-black text-md font-fira text-justify mt-2">
-            At Sruvi Inc, we don{"'"}t just build websites; we weave digital
-            dreams. Web development is the process of creating, building, and
-            maintaining websites. It involves various tasks, from writing code
-            to designing the user interface UI and ensuring the website runs
-            smoothly on the internet.
-          </h1>
-        </div>
-        <div>
-          <h1 className="text-black font-bold text-lg font-fira">Languages:</h1>
-          <h1 className="text-black text-md font-fira">Front-end:</h1>
-          <div className="grid grid-cols-3 mt-4">
-            <div className="flex flex-col items-center ">
-              <Html5Icon />
-              <h1 className="text-black text-center  text-md font-fira">
-                HTML
-              </h1>
+            <h1 className="text-black text-md font-fira mt-4">Back-end:</h1>
+            <div className="grid grid-cols-3 mt-4">
+              <div className="flex flex-col items-center ">
+                <img
+                  src={nodejs.src}
+                  alt="css"
+                  style={{ width: "24px", height: "24px" }}
+                />
+                <h1 className="text-black text-center text-md font-fira">
+                  Node Js
+                </h1>
+              </div>
+              <div className="flex flex-col items-center ">
+                <img
+                  src={python.src}
+                  alt="css"
+                  style={{ width: "24px", height: "24px" }}
+                />
+                <h1 className="text-black text-center text-md font-fira">
+                  Python
+                </h1>
+              </div>
             </div>
-            <div className="flex flex-col items-center ">
-              <img
-                src={css.src}
-                alt="css"
-                style={{ width: "24px", height: "24px" }}
-              />
-              <h1 className="text-black text-center text-md font-fira">CSS</h1>
-            </div>
-            <div className="flex flex-col items-center ">
-              <Html5Icon />
-              <h1 className="text-black text-center text-md font-fira">
-                JavaScript
-              </h1>
+            <h1 className="text-black font-bold text-lg font-fira mt-4">
+              FrameWorks:
+            </h1>
+            <div className="grid grid-cols-3 mt-4">
+              <div className="flex flex-col items-center ">
+                <ReactIcon />
+                <h1 className="text-black text-center text-md font-fira">
+                  React
+                </h1>
+              </div>
+              <div className="flex flex-col items-center ">
+                <img
+                  src={vue.src}
+                  alt="css"
+                  style={{ width: "24px", height: "24px" }}
+                />
+                <h1 className="text-black text-center text-md font-fira">
+                  Vue
+                </h1>
+              </div>
+              <div className="flex flex-col items-center ">
+                <img
+                  src={php.src}
+                  alt="css"
+                  style={{ width: "24px", height: "24px" }}
+                />
+                <h1 className="text-black text-center text-md font-fira">
+                  PHP
+                </h1>
+              </div>
             </div>
           </div>
 
-          <h1 className="text-black text-md font-fira mt-4">Back-end:</h1>
-          <div className="grid grid-cols-3 mt-4">
-            <div className="flex flex-col items-center ">
-              <img
-                src={nodejs.src}
-                alt="css"
-                style={{ width: "24px", height: "24px" }}
-              />
-              <h1 className="text-black text-center text-md font-fira">
-                Node Js
+          <div className="mt-8">
+            <h1 className="text-black font-bold text-lg font-fira">
+              Ready to Webify?
+            </h1>
+            <h1 className="text-black text-md font-fira text-justify">
+              Whether it{"'"}s an e-commerce platform, a portfolio site, or a
+              blog—Sruvi Inc has your back.
+            </h1>
+            <Button
+              variant="contained"
+              style={{
+                backgroundColor: "#48c43c",
+                marginTop: "10px",
+              }}
+              fullWidth
+            >
+              <h1 className="text-white text-lg font-bungee tracking-wide">
+                {"Start Your Web Journey"}
               </h1>
-            </div>
-            <div className="flex flex-col items-center ">
-              <img
-                src={python.src}
-                alt="css"
-                style={{ width: "24px", height: "24px" }}
-              />
-              <h1 className="text-black text-center text-md font-fira">
-                Python
-              </h1>
-            </div>
+            </Button>
           </div>
-          <h1 className="text-black font-bold text-lg font-fira mt-4">
-            FrameWorks:
-          </h1>
-          <div className="grid grid-cols-3 mt-4">
-            <div className="flex flex-col items-center ">
-              <ReactIcon />
-              <h1 className="text-black text-center text-md font-fira">
-                React
-              </h1>
-            </div>
-            <div className="flex flex-col items-center ">
-              <img
-                src={vue.src}
-                alt="css"
-                style={{ width: "24px", height: "24px" }}
-              />
-              <h1 className="text-black text-center text-md font-fira">Vue</h1>
-            </div>
-            <div className="flex flex-col items-center ">
-              <img
-                src={php.src}
-                alt="css"
-                style={{ width: "24px", height: "24px" }}
-              />
-              <h1 className="text-black text-center text-md font-fira">PHP</h1>
-            </div>
-          </div>
-        </div>
-
-        <div className="mt-8">
-          <h1 className="text-black font-bold text-lg font-fira">
-            Ready to Webify?
-          </h1>
-          <h1 className="text-black text-md font-fira text-justify">
-            Whether it{"'"}s an e-commerce platform, a portfolio site, or a
-            blog—Sruvi Inc has your back.
-          </h1>
-          <Button
-            variant="contained"
-            style={{
-              backgroundColor: "#48c43c",
-              marginTop: "10px",
-            }}
-            fullWidth
-          >
-            Start Your Web Journey
-          </Button>
         </div>
       </div>
-    </div>
+    </Animatediv>
   );
 };
 

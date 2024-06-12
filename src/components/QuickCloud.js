@@ -28,7 +28,7 @@ const QuickCloud = () => {
                 alt="visual basic"
                 style={{ width: "40px", height: "40px" }}
               />
-              <h1 className="text-black text-xl  font-bold font-bungee ml-4">
+              <h1 className="text-primary tracking-wide text-2xl  font-bungee ml-4">
                 {"Cloud & Devops"}
               </h1>
             </div>
@@ -113,7 +113,9 @@ const QuickCloud = () => {
               }}
               fullWidth
             >
-              {"Your digital altitude awaits"}
+              <h1 className="text-white text-lg font-bungee tracking-wide">
+                {"Your digital altitude awaits"}
+              </h1>
             </Button>
           </div>
         </div>

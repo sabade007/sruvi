@@ -1,6 +1,8 @@
 import React from "react";
 import bg1 from "../../public/bg.png";
 
+import Animatediv from "@/animations/Animatediv";
+
 const QuickDataBase = () => {
   const Database01Icon = (props) => (
     <svg
@@ -83,44 +85,56 @@ const QuickDataBase = () => {
     </svg>
   );
   return (
-    <div
-      className="p-4 h-full"
-      style={{
-        backgroundImage: `url(${bg1.src})`,
-        backgroundPosition: "center",
-        backgroundSize: "cover",
-        backgroundRepeat: "no-repeat",
-      }}
-    >
-      <div className="bg-white p-4 h-full flex flex-col justify-between shadow-2xl rounded-lg">
-        <div>
-          <div className="flex flex-row items-center">
-            <Database01Icon />
-            <h1 className="text-black text-xl  font-bold font-bungee ml-4">
-              {"Database Management"}
+    <Animatediv>
+      <div
+        className="p-4 h-full"
+        style={{
+          backgroundImage: `url(${bg1.src})`,
+          backgroundPosition: "center",
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
+        }}
+      >
+        <div className="bg-white p-4 h-full flex flex-col justify-between shadow-2xl rounded-lg">
+          <div>
+            <div className="flex flex-row items-center">
+              <Database01Icon />
+              <h1 className="text-primary text-2xl  tracking-wide font-bungee ml-4">
+                {"Database Management"}
+              </h1>
+            </div>
+            <h1 className="text-black font-bold text-lg font-fira mt-4">
+              {" Mastering Data, Empowering Business"}
+            </h1>
+
+            <h1 className="text-black text-md font-fira text-justify mt-2">
+              {
+                "At Sruvi Inc, we don not just handle data; we orchestrate its symphony. Our developers are the Builders of Bytes and the Curators of Collections. Whether it is SQL, NoSQL, or NewSQL, we speak all dialects. Slow queries? Indexing nightmares? We wave our wands. Your data is our sacred trust."
+              }
             </h1>
           </div>
-          <h1 className="text-black font-bold text-lg font-fira mt-4">
-            {" Mastering Data, Empowering Business"}
-          </h1>
+          <div className="mt-4">
+            <hr
+              style={{
+                width: "100%",
+                height: "1px",
+                backgroundColor: "#48c43c",
+                border: "none",
+              }}
+            />
 
-          <h1 className="text-black text-md font-fira text-justify mt-2">
-            {
-              "At Sruvi Inc, we don not just handle data; we orchestrate its symphony. Our developers are the Builders of Bytes and the Curators of Collections. Whether it is SQL, NoSQL, or NewSQL, we speak all dialects. Slow queries? Indexing nightmares? We wave our wands. Your data is our sacred trust."
-            }
-          </h1>
-        </div>
-
-        <div className="mt-4 flex flex-row justify-between">
-          <h1 className="text-black font-bold text-lg font-fira">
-            {"Ready to Unleash Insights? Lets Talk Data!"}
-          </h1>
-          <div className="flex flex-col items-center justify-center">
-            <Forward02Icon />
+            <div className="mt-1 flex flex-row justify-between">
+              <h1 className="text-black  text-lg font-bungee">
+                {"Ready to Unleash Insights? Lets Talk Data!"}
+              </h1>
+              <div className="flex flex-col items-center justify-center cursor-pointer">
+                <Forward02Icon />
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </Animatediv>
   );
 };
 

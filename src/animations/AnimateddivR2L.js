@@ -4,7 +4,9 @@ import React from "react";
 
 const AnimateddivR2L = ({ children }) => {
   const ref = useRef();
-  const inView = useInView(ref);
+  const inView = useInView(ref, {
+    once: true,
+  });
 
   return (
     <motion.div
@@ -16,7 +18,6 @@ const AnimateddivR2L = ({ children }) => {
         hidden: { opacity: 0, x: [20] },
       }}
       transition={{ duration: 2 }}
-      viewport={{ once: true }} // Add this line
       style={{ height: "100%" }}
     >
       {children}
