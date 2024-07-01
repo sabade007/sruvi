@@ -10,6 +10,8 @@ import { useEffect, useRef } from "react";
 import React from "react";
 import { HomeRounded } from "@mui/icons-material";
 import Link from "next/link";
+import Navtop from "@/components/Navtop";
+import Navbar from "@/components/Navbar";
 
 export default function Home() {
   const Forward02Icon = (props: any) => (
@@ -41,44 +43,23 @@ export default function Home() {
   const inview = useInView(headerRef);
 
   return (
-    <div
-      className="relative h-screen dark:bg-grey overflow-y-auto"
-      style={{
-        backgroundImage: `url(${bg1.src})`,
-        backgroundPosition: "center",
-        backgroundSize: "cover",
-        backgroundRepeat: "no-repeat",
-      }}
-    >
-      <motion.div ref={headerRef}>
-        <Header />
-      </motion.div>
+    <div className="bg-white h-screen">
+      <Navbar />
 
-      <Link href="/homeaa">
-        <motion.div
-          initial="hidden"
-          className="zero:hidden sm:hidden md:hidden lg:block xl:block  cursor-pointer "
-          style={{
-            position: "fixed",
-            top: "0px",
-            left: "40%",
-            zIndex: "999",
-            display: inview ? "none" : "block",
-          }}
-        >
-          <div className="flex justify-center items-center flex-row bg-blueblack p-2 rounded">
-            <HomeRounded style={{ color: "#ffffff" }} />
-            <h1 className="text-white  text-lg font-bungee mr-2 ml-2">
-              Get to Home Page
-            </h1>
-            <Forward02Icon />
-          </div>
-        </motion.div>
-      </Link>
-      <QuickAccess />
-      <QuickAccess2 />
-      <QuickAccess3 />
-      <Footer />
+      <div
+        className=" bg-white overflow-y-auto"
+        style={{
+          backgroundImage: `url(${bg1.src})`,
+          backgroundPosition: "center",
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
+        }}
+      >
+        <QuickAccess />
+        <QuickAccess2 />
+        <QuickAccess3 />
+        <Footer />
+      </div>
     </div>
   );
 }

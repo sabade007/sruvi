@@ -15,7 +15,7 @@ function Animatediv({ children }) {
         visible: { opacity: 1, x: [-20, 20, 0] },
         hidden: { opacity: 0, x: [-20] },
       }}
-      transition={{ duration: 2 }}
+      transition={{ duration: 2, delay: 0.5 }}
       viewport={{ once: true }} // Add this line
       style={{ height: "100%" }}
     >

@@ -1,14 +1,14 @@
 import { Container } from "@mui/material";
 import React from "react";
 
-import QuickWeb from "../components/QuickWeb";
-import QuickMobile from "../components/QuickMobile";
-import QuickDesktop from "../components/QuickDesktop";
-import QuickCloud from "../components/QuickCloud";
-import QuickBusiness from "../components/QuickBusiness";
-import QuickDataBase from "../components/QuickDataBase";
-import QuickSeo from "../components/QuickSeo";
-import QuickDigitalMarketing from "../components/QuickDigitalMarketing";
+import QuickWeb from "./QuickWeb";
+import QuickMobile from "./QuickMobile";
+import QuickDesktop from "./QuickDesktop";
+import QuickCloud from "./QuickCloud";
+import QuickBusiness from "./QuickBusiness";
+import QuickDataBase from "./QuickDataBase";
+import QuickSeo from "./QuickSeo";
+import QuickDigitalMarketing from "./QuickDigitalMarketing";
 
 const QuickAccess2 = () => {
   const NanoTechnologyIcon = (props) => (

@@ -220,26 +220,24 @@ const QuickWeb = () => {
             <div className="flex flex-row items-center">
               <WebDesign01Icon />
               <h1 className="text-primary text-2xl tracking-wide   font-bungee ml-4">
-                Web Development
+                {"Web Development"}
               </h1>
             </div>
             <h1 className="text-black font-bold text-lg font-fira mt-4">
-              Website Development Wizards
+              {"Website Development Wizards"}
             </h1>
 
             <h1 className="text-black text-md font-fira text-justify mt-2">
-              At Sruvi Inc, we don{"'"}t just build websites; we weave digital
-              dreams. Web development is the process of creating, building, and
-              maintaining websites. It involves various tasks, from writing code
-              to designing the user interface UI and ensuring the website runs
-              smoothly on the internet.
+              {
+                "At Sruvi Inc, we don't just build websites; we weave digital dreams. Web development is the process of creating, building, and maintaining websites. It involves various tasks, from writing code to designing the user interface UI and ensuring the website runs smoothly on the internet."
+              }
             </h1>
           </div>
           <div>
             <h1 className="text-black font-bold text-lg font-fira">
-              Languages:
+              {"Languages:"}
             </h1>
-            <h1 className="text-black text-md font-fira">Front-end:</h1>
+            <h1 className="text-black text-md font-fira">{"Front-end:"}</h1>
             <div className="grid grid-cols-3 mt-4">
               <div className="flex flex-col items-center ">
                 <Html5Icon />
