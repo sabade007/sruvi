@@ -1,5 +1,4 @@
 "use client";
-
 import React, { useEffect } from "react";
 import Header from "./components/Header";
 import { UserAuth } from "../../context/AuthContext";
