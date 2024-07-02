@@ -210,6 +210,8 @@ const QuickAccess = () => {
 
   return (
     <div>
+      {/* Desktop code starts here */}
+
       <div className="zero:hidden sm:hidden md:hidden lg:block xl:block xxl:block">
         <Container maxWidth="xl" className="p-4">
           <AnimateddivT2B>
@@ -652,6 +654,8 @@ const QuickAccess = () => {
         </Container>
       </div>
 
+      {/* Mobile code starts */}
+
       <div className="zero:block sm:block md:block lg:hidden xl:hidden xxl:hidden">
         <Container maxWidth="xl">
           <div className="p-4 bg-gradient-to-r from-blueblack to-slate-800 rounded-lg">
@@ -764,8 +768,8 @@ const QuickAccess = () => {
                 </div>
               </div>
             </div>
-            <div className=" col-span-10 p-4 bg-greyish">
-              <div className=" bg-white h-full flex flex-col justify-between p-4">
+            <div className=" col-span-10 p-2 rounded-lg bg-greyish">
+              <div className=" bg-white h-full flex flex-col justify-between p-4 rounded-lg">
                 {submitSuccess ? (
                   <div className="flex flex-col justify-center items-center h-full">
                     <CheckmarkBadge02Icon />
@@ -786,13 +790,13 @@ const QuickAccess = () => {
                         justifyContent: "space-between",
                       }}
                     >
-                      <div className="flex flex-row items-center justify-center mb-4">
+                      <div className="flex flex-row items-center  mb-4">
                         <ConnectWithoutContact
-                          className="text-primary"
-                          fontSize="medium"
+                          className="text-orange"
+                          fontSize="small"
                           style={{ marginRight: 10 }}
                         />
-                        <h1 className="text-black text-2xl  font-bungee ">
+                        <h1 className="text-black text-xl  tracking-wide font-bungee ">
                           {"Keep Close, Stay Connected!"}
                         </h1>
                       </div>
@@ -848,7 +852,7 @@ const QuickAccess = () => {
                         />
                       </div>
 
-                      <h1 className="text-black  font-bungee mt-2">
+                      <h1 className="text-orange tracking-wide text-md font-bungee mt-2">
                         {"Contact Type:"}
                       </h1>
                       <div className="flex flex-row p-0 mb-4 ">
@@ -863,7 +867,7 @@ const QuickAccess = () => {
                             }}
                           />
                           <h1
-                            className="p-1 text-black   font-bungee tracking-widest"
+                            className="p-1 text-black  text-md font-bungee tracking-widest"
                             style={{
                               color: mobileChecked ? "#48C43C" : "black",
                             }}
@@ -982,14 +986,14 @@ const QuickAccess = () => {
                         </FormHelperText>
                       )}
 
-                      <h1 className="text-black  font-bungee mt-2 tracking-widest">
+                      <h1 className="text-orange text-md  font-bungee mt-2 tracking-wide">
                         {" What are you interested in?"}
                       </h1>
                       <FormHelperText className="mb-2">
                         {"You can select multiple options"}
                       </FormHelperText>
                       <FormGroup>
-                        <div className="flex grid grid-cols-2 gap-4 mb-4">
+                        <div className="flex grid grid-cols-1  ">
                           <FormControlLabel
                             control={
                               <Checkbox
@@ -1001,7 +1005,7 @@ const QuickAccess = () => {
                               />
                             }
                             label={
-                              <h1 className="text-black font-bungee text-md">
+                              <h1 className="text-black font-bungee text-sm">
                                 {"Website Development"}
                               </h1>
                             }
@@ -1019,13 +1023,13 @@ const QuickAccess = () => {
                               />
                             }
                             label={
-                              <h1 className="text-black font-bungee text-md">
+                              <h1 className="text-black font-bungee text-sm">
                                 {"Mobile Apps"}
                               </h1>
                             }
                           />
                         </div>
-                        <div className="flex grid grid-cols-2 gap-4 mb-4">
+                        <div className="flex grid grid-cols-1  ">
                           <FormControlLabel
                             control={
                               <Checkbox
@@ -1039,7 +1043,7 @@ const QuickAccess = () => {
                               />
                             }
                             label={
-                              <h1 className="text-black font-bungee text-md">
+                              <h1 className="text-black font-bungee text-sm">
                                 {"Custom Software"}
                               </h1>
                             }
@@ -1057,7 +1061,7 @@ const QuickAccess = () => {
                               />
                             }
                             label={
-                              <h1 className="text-black font-bungee text-md">
+                              <h1 className="text-black font-bungee text-sm">
                                 {"Cloud & DevOps"}
                               </h1>
                             }
