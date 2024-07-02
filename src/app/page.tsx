@@ -6,7 +6,7 @@ import QuickAccess from "../components/QuickAccess";
 import QuickAccess2 from "../components/QuickAccess2";
 import QuickAccess3 from "../components/QuickAccess3";
 import Footer from "../components/Footer";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import React from "react";
 import { HomeRounded } from "@mui/icons-material";
 import Link from "next/link";
@@ -14,6 +14,25 @@ import Navtop from "@/components/Navtop";
 import Navbar from "@/components/Navbar";
 
 export default function Home() {
+  const [theme, setTheme] = useState(
+    typeof window !== "undefined"
+      ? localStorage.getItem("theme") || "light"
+      : "light"
+  );
+
+  useEffect(() => {
+    if (theme === "dark") {
+      document.documentElement.classList.add("light");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+    localStorage.setItem("theme", theme);
+  }, [theme]);
+
+  const toggleTheme = () => {
+    setTheme(theme === "dark" ? "light" : "dark");
+  };
+
   const Forward02Icon = (props: any) => (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -43,7 +62,7 @@ export default function Home() {
   const inview = useInView(headerRef);
 
   return (
-    <div className="bg-white h-screen">
+    <div className=" bg-white dark:bg-white">
       <Navbar />
 
       <div

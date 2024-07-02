@@ -4,9 +4,10 @@ import { motion } from "framer-motion";
 import logo from "../../public/logo.png";
 import u from "../../public/u.png";
 
-import { SupervisedUserCircleRounded } from "@mui/icons-material";
+import { Menu, SupervisedUserCircleRounded } from "@mui/icons-material";
 import { UserAuth } from "@/context/AuthContext";
 import Image from "next/image";
+import { Drawer, List, ListItem, ListItemText } from "@mui/material";
 
 const Navtop = () => {
   const { user, googleSignIn, logOut } = UserAuth();
@@ -35,6 +36,8 @@ const Navtop = () => {
       return;
     }
   }, [user]);
+
+  const [open, setOpen] = useState(false);
 
   return (
     <div>
@@ -98,16 +101,43 @@ const Navtop = () => {
 
         {/* Mobile code */}
 
-        <div className="bg-white w-full zero:block sm:block md:block lg:hidden xl:hidden xxl:hidden">
-          <div className="flex flex-row items-center justify-between">
-            <div className="flex flex-col items-center w-full">
-              <Image src={logo} className="w-24" alt="Logo" />
-              <div className="flex flex-row items-center w-full">
-                <h1 className="text-black text-lg font-bungee text-center">
-                  {"because it's for"}
-                </h1>
-                <img src={u} className="h-5 ml-2" alt="U Icon" />
+        <div className="bg-white w-full zero:block sm:block md:block lg:hidden xl:hidden xxl:hidden ">
+          <div className=" p-4 ">
+            <div className=" flex flex-row items-center justify-between shadow-xl rounded-2xl">
+              <div className="flex flex-col p-4 ">
+                <div>
+                  <Image src={logo} alt="Logo" className="w-24" />
+                </div>
+                <div className="flex flex-row">
+                  <h1 className="text-black text-lg font-bungee">
+                    {"because it's for"}
+                  </h1>
+                  <Image src={u} alt="U Icon" className="w-6 ml-2 " />
+                </div>
               </div>
+
+              <div className="p-4 cursor-pointer" onClick={() => setOpen(true)}>
+                <Menu className="text-primary" fontSize="large" />
+              </div>
+              {open && (
+                <Drawer
+                  className="p-4 bg-greyish"
+                  anchor="right"
+                  open={open}
+                  onClose={() => setOpen(false)}
+                >
+                  <div className="p-4">
+                    <h1 className="text-secondary font-bungee text-lg">Menu</h1>
+                    <List>
+                      {["Home", "About", "Contact"].map((text) => (
+                        <ListItem key={text} onClick={() => setOpen(false)}>
+                          <ListItemText primary={text} secondary={""} />
+                        </ListItem>
+                      ))}
+                    </List>
+                  </div>
+                </Drawer>
+              )}
             </div>
           </div>
         </div>
