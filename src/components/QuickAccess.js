@@ -258,8 +258,8 @@ const QuickAccess = () => {
                       >
                         <div className="flex flex-row items-center justify-center mb-4">
                           <ConnectWithoutContact
-                            className="text-primary"
-                            fontSize="medium"
+                            className="text-orange"
+                            fontSize="large"
                             style={{ marginRight: 10 }}
                           />
                           <h1 className="text-black text-2xl  font-bungee ">
@@ -318,7 +318,7 @@ const QuickAccess = () => {
                           />
                         </div>
 
-                        <h1 className="text-black  font-bungee mt-2">
+                        <h1 className="text-black  text-md font-bungee mt-2">
                           {"Contact Type:"}
                         </h1>
                         <div className="flex flex-row p-0 mb-4 ">
@@ -452,7 +452,7 @@ const QuickAccess = () => {
                           </FormHelperText>
                         )}
 
-                        <h1 className="text-black  font-bungee mt-2 tracking-widest">
+                        <h1 className="text-orange  font-bungee mt-2 tracking-widest">
                           {" What are you interested in?"}
                         </h1>
                         <FormHelperText className="mb-2">
@@ -557,20 +557,20 @@ const QuickAccess = () => {
               <AnimateddivR2L>
                 <div className=" bg-white h-full flex flex-col justify-between p-4">
                   <div className="">
-                    <h1 className="text-primary font-bungee text-xl  font-bungee">
+                    <h1 className="text-orange font-bungee text-lg  font-bungee">
                       {" Introduction"}
                     </h1>
                     <h1 className="text-3xl text-black  font-bungee mb-2">
                       {" You Think It, We Build It"}
                     </h1>
-                    <h1 className="text-black font-fira text-justify">
+                    <h1 className="text-black font-fira text-md text-justify">
                       {
                         "At Sruvi Inc, we are more than lines of code; we are architects of innovation. Our mission? To transform ideas into elegant software solutions that propel businesses forward."
                       }
                     </h1>
                   </div>
                   <div>
-                    <h1 className="text-primary font-bungee text-lg">
+                    <h1 className="text-orange font-bungee tracking-wide text-lg">
                       {"Why we stand out ?"}
                     </h1>
                     <div className="grid grid-cols-2 gap-4">
@@ -638,7 +638,7 @@ const QuickAccess = () => {
                     </div>
                   </div>
                   <div>
-                    <h1 className="text-primary font-bungee tracking-widest text-lg ">
+                    <h1 className="text-orange font-bungee tracking-wide text-lg ">
                       Our Team
                     </h1>
                     <h1 className="text-md text-black  font-fira text-justify">
@@ -773,7 +773,7 @@ const QuickAccess = () => {
                 {submitSuccess ? (
                   <div className="flex flex-col justify-center items-center h-full">
                     <CheckmarkBadge02Icon />
-                    <h1 className="text-black font-fira text-justify">
+                    <h1 className="text-black font-fira text-sm text-justify">
                       {
                         "Your journey begins with us! We've received your request, and our team is already on the move. Expect a prompt response from us soon. In the meantime, feel free to explore our services and get ready for an exciting collaboration. Thank you for choosing Sruvi Inc.!"
                       }

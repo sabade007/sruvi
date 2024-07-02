@@ -9,6 +9,7 @@ import QuickBusiness from "./QuickBusiness";
 import QuickDataBase from "./QuickDataBase";
 import QuickSeo from "./QuickSeo";
 import QuickDigitalMarketing from "./QuickDigitalMarketing";
+import { DesignServicesRounded } from "@mui/icons-material";
 
 const QuickAccess2 = () => {
   const NanoTechnologyIcon = (props) => (
@@ -90,52 +91,110 @@ const QuickAccess2 = () => {
     </svg>
   );
   return (
-    <div className="zero:hidden sm:hidden md:hidden lg:block xl:block">
-      <Container maxWidth="xl" className="p-4">
-        <div className="flex flex-col  bg-greyish p-4">
-          <div className="bg-white p-4 w-full">
-            <div className="flex flex-row items-center">
-              <NanoTechnologyIcon />
-              <h1 className="text-black text-3xl tracking-wide font-bungee ml-2">
-                {"Services & Technology"}
+    <div>
+      {/* Desktop Code */}
+      <div className="zero:hidden sm:hidden md:hidden lg:block xl:block xxl:block">
+        <Container maxWidth="xl" className="p-4">
+          <div className="flex flex-col  bg-greyish p-4">
+            <div className="bg-white p-4 w-full">
+              <div className="flex flex-row items-center">
+                <DesignServicesRounded
+                  className="text-orange"
+                  fontSize="large"
+                />
+                <h1 className="text-black text-2xl tracking-wide font-bungee ml-2">
+                  {"Services & Technology"}
+                </h1>
+              </div>
+              <h1 className="text-black text-md font-fira mt-2 text-justify">
+                {
+                  "At Sruvi Inc, we harness a diverse set of technologies to create robust and innovative software solutions. Lets explore the key categories and the technologies we excel in:"
+                }
               </h1>
-            </div>
-            <h1 className="text-black text-md font-fira ml-12 text-justify">
-              {
-                "At Sruvi Inc, we harness a diverse set of technologies to create robust and innovative software solutions. Lets explore the key categories and the technologies we excel in:"
-              }
-            </h1>
 
-            <div className="grid grid-cols-2">
-              <div className="col-span-1 h-full">
-                <QuickWeb />
-              </div>
-              <div className="col-span-1 h-full">
-                <QuickMobile />
-              </div>
-              <div className="col-span-1 h-full">
-                <QuickDesktop />
-              </div>
-              <div className="col-span-1 h-full">
-                <QuickCloud />
-              </div>
-              <div className="col-span-1 h-full">
-                <QuickDataBase />
-              </div>
-              <div className="col-span-1 h-full">
-                <QuickSeo />
-              </div>
-              <div className="col-span-1 h-full">
-                <QuickDigitalMarketing />
-              </div>
-              <div className="col-span-1 h-full">
-                <QuickBusiness />
+              <div className="grid grid-cols-2">
+                <div className="col-span-1 h-full">
+                  <QuickWeb />
+                </div>
+                <div className="col-span-1 h-full">
+                  <QuickMobile />
+                </div>
+                <div className="col-span-1 h-full">
+                  <QuickDesktop />
+                </div>
+                <div className="col-span-1 h-full">
+                  <QuickCloud />
+                </div>
+                <div className="col-span-1 h-full">
+                  <QuickDataBase />
+                </div>
+                <div className="col-span-1 h-full">
+                  <QuickSeo />
+                </div>
+                <div className="col-span-1 h-full">
+                  <QuickDigitalMarketing />
+                </div>
+                <div className="col-span-1 h-full">
+                  <QuickBusiness />
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </Container>
-      ;
+        </Container>
+        ;
+      </div>
+
+      {/* Mobile Code */}
+      <div className="zero:block sm:block md:block lg:hidden xl:hidden xxl:hidden">
+        <Container maxWidth="xl" className="p-4">
+          <div className="flex flex-col  bg-greyish p-2 rounded-lg">
+            <div className="bg-white p-4 w-full rounded-lg">
+              <div className="flex flex-row items-center">
+                <DesignServicesRounded
+                  className="text-orange"
+                  fontSize="small"
+                />
+                <h1 className="text-black text-xl tracking-wide font-bungee ml-2">
+                  {"Services"}
+                </h1>
+              </div>
+              <h1 className="text-black text-sm font-fira  text-justify mt-2">
+                {
+                  "At Sruvi Inc, we harness a diverse set of technologies to create robust and innovative software solutions. Lets explore the key categories and the technologies we excel in:"
+                }
+              </h1>
+
+              <div className="grid grid-cols-1">
+                <div className="col-span-1 h-full">
+                  <QuickWeb />
+                </div>
+                <div className="col-span-1 h-full">
+                  <QuickMobile />
+                </div>
+                <div className="col-span-1 h-full">
+                  <QuickDesktop />
+                </div>
+                <div className="col-span-1 h-full">
+                  <QuickCloud />
+                </div>
+                <div className="col-span-1 h-full">
+                  <QuickDataBase />
+                </div>
+                <div className="col-span-1 h-full">
+                  <QuickSeo />
+                </div>
+                <div className="col-span-1 h-full">
+                  <QuickDigitalMarketing />
+                </div>
+                <div className="col-span-1 h-full">
+                  <QuickBusiness />
+                </div>
+              </div>
+            </div>
+          </div>
+        </Container>
+        ;
+      </div>
     </div>
   );
 };
