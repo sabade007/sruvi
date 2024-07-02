@@ -670,7 +670,7 @@ const QuickAccess = () => {
 
           <div className="flex grid grid-cols-10 mt-4 gap-4">
             <div className="col-span-10 bg-greyish p-4 rounded-lg">
-              <div className=" bg-white h-full flex flex-col justify-between rounded-lg p-4">
+              <div className=" bg-white h-full flex flex-col justify-between rounded-lg p-2">
                 <div className="">
                   <h1 className="text-orange font-bungee text-md tracking-wide font-bungee">
                     {" Introduction"}
