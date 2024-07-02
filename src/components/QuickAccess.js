@@ -653,7 +653,7 @@ const QuickAccess = () => {
       </div>
 
       <div className="zero:block sm:block md:block lg:hidden xl:hidden xxl:hidden">
-        <Container maxWidth="xl" className="p-4">
+        <Container maxWidth="xl">
           <div className="p-4 bg-gradient-to-r from-blueblack to-slate-800 rounded-lg">
             <div className="flex flex-row items-center">
               <DashboardSquare03Icon className="text-orange" fontSize="small" />
