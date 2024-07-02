@@ -14,13 +14,9 @@ const page = () => {
   // });
   return (
     <div className="bg-white dark:bg-white w-full h-screen">
-      {user ? (
-        <div>
-          <Header />
-        </div>
-      ) : (
-        <Signin />
-      )}
+      <div>
+        <Header />
+      </div>
     </div>
   );
 };
