@@ -258,7 +258,7 @@ const Navbar = () => {
     <div className="sticky top-0 z-50 left-0 right-0 bg-white bg-opacity-50 backdrop-blur transition-all duration-300 ease-in-out">
       <div className="zero:hidden sm:hidden md:hidden lg:block xl:block xxl:block ">
         <Container maxWidth="xl">
-          <div className="flex flex-row justify-evenly items-center p-2">
+          <div className="flex flex-row justify-between p-2">
             <div
               onClick={handleQuickaccessclicked}
               onMouseEnter={() => setHoverQuickaccess(true)}
@@ -385,133 +385,6 @@ const Navbar = () => {
             </div>
           </div>
         </Container>
-      </div>
-
-      <div className="zero:block sm:block md:block lg:hidden xl:hidden xxl:hidden">
-        <div className="flex flex-row justify-evenly items-center p-2">
-          <div
-            onClick={handleQuickaccessclicked}
-            onMouseEnter={() => setHoverQuickaccess(true)}
-            onMouseLeave={() => setHoverQuickaccess(false)}
-            className="cursor-pointer hover:scale-110 transition-all duration-300 ease-in-out flex flex-row items-center"
-          >
-            <DashboardSquare03Icon
-              className={`${
-                quickaccess || hoverQuickaccess ? "text-orange" : "text-primary"
-              } `}
-            />
-            <h1
-              className={`${
-                quickaccess || hoverQuickaccess ? "text-orange" : "text-black"
-              } text-md font-bungee ml-2`}
-            >
-              Quick Access
-            </h1>
-          </div>
-          <div
-            onClick={handleHomeclicked}
-            onMouseEnter={() => setHoverHome(true)}
-            onMouseLeave={() => setHoverHome(false)}
-            className="cursor-pointer hover:scale-110 transition-all duration-300 ease-in-out flex flex-row items-center"
-          >
-            <HomeIcon
-              style={{ height: "20px", width: "20px" }}
-              className={`${
-                home || hoverHome ? "text-orange" : "text-primary"
-              } `}
-            />
-            <h1
-              className={`${
-                home || hoverHome ? "text-orange" : "text-black"
-              } text-md font-bungee ml-2`}
-            >
-              Home
-            </h1>
-          </div>
-
-          <div
-            onClick={handleservicesclicked}
-            onMouseEnter={() => setHoverServices(true)}
-            onMouseLeave={() => setHoverServices(false)}
-            className="cursor-pointer hover:scale-110 transition-all duration-300 ease-in-out flex flex-row items-center"
-          >
-            <DesignServicesIcon
-              style={{ height: "20px", width: "20px" }}
-              className={`${
-                services || hoverServices ? "text-orange" : "text-primary"
-              } `}
-            />
-            <h1
-              className={`${
-                services || hoverServices ? "text-orange" : "text-black"
-              } text-md font-bungee ml-2`}
-            >
-              Services
-            </h1>
-          </div>
-          <div
-            onClick={handleAboutclicked}
-            onMouseEnter={() => setHoverAbout(true)}
-            onMouseLeave={() => setHoverAbout(false)}
-            className="cursor-pointer hover:scale-110 transition-all duration-300 ease-in-out flex flex-row items-center"
-          >
-            <InfoIcon
-              style={{ height: "20px", width: "20px" }}
-              className={`${
-                about || hoverAbout ? "text-orange" : "text-primary"
-              } `}
-            />
-            <h1
-              className={`${
-                about || hoverAbout ? "text-orange" : "text-black"
-              } text-md font-bungee ml-2`}
-            >
-              About
-            </h1>
-          </div>
-
-          <div
-            onClick={handleBlogclicked}
-            onMouseEnter={() => setHoverBlog(true)}
-            onMouseLeave={() => setHoverBlog(false)}
-            className="cursor-pointer hover:scale-110 transition-all duration-300 ease-in-out flex flex-row items-center"
-          >
-            <BloggerIcon
-              style={{ height: "20px", width: "20px" }}
-              className={`${
-                blog || hoverBlog ? "text-orange" : "text-primary"
-              } `}
-            />
-            <h1
-              className={`${
-                blog || hoverBlog ? "text-orange" : "text-black"
-              } text-md font-bungee ml-2`}
-            >
-              Blog
-            </h1>
-          </div>
-
-          <div
-            onClick={handleContactclicked}
-            onMouseEnter={() => setHoverContact(true)}
-            onMouseLeave={() => setHoverContact(false)}
-            className="cursor-pointer hover:scale-110 transition-all duration-300 ease-in-out flex flex-row items-center"
-          >
-            <ContactSupportIcon
-              style={{ height: "20px", width: "20px" }}
-              className={`${
-                contact || hoverContact ? "text-orange" : "text-primary"
-              } `}
-            />
-            <h1
-              className={`${
-                contact || hoverContact ? "text-orange" : "text-black"
-              } text-md font-bungee ml-2`}
-            >
-              Contact
-            </h1>
-          </div>
-        </div>
       </div>
     </div>
   );

@@ -1,7 +1,7 @@
 "use client";
 import { motion, useInView } from "framer-motion";
 import bg1 from "../../public/bg.png";
-import Header from "../components/Header";
+
 import QuickAccess from "../components/QuickAccess";
 import QuickAccess2 from "../components/QuickAccess2";
 import QuickAccess3 from "../components/QuickAccess3";

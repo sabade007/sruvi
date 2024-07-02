@@ -5,7 +5,7 @@ import Headerhome from "./components/Headerhome";
 import Approach from "./components/Approach";
 import Works from "./components/Works";
 import Services from "./components/Services";
-import Header from "@/components/Header";
+
 import { motion } from "framer-motion";
 import logo from "../../../public/logo.png";
 import u from "../../../public/u.png";

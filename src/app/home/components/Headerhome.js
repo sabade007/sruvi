@@ -1,16 +1,5 @@
 import React, { useRef, useState } from "react";
 import { motion, useInView } from "framer-motion";
-import logo from "../../../../public/logo.png";
-import u from "../../../../public/u.png";
-import ReactTypingEffect from "react-typing-effect";
-import Header from "../../../components/Header";
-import Link from "next/link";
-import MenuOpenIcon from "@mui/icons-material/MenuOpen";
-import HomeIcon from "@mui/icons-material/Home";
-import DesignServicesIcon from "@mui/icons-material/DesignServices";
-import InfoIcon from "@mui/icons-material/Info";
-import IntegrationInstructionsIcon from "@mui/icons-material/IntegrationInstructions";
-import ContactSupportIcon from "@mui/icons-material/ContactSupport";
 
 import abcd from "../../../../public/lottie/landingAnimation.json";
 import Lottie from "lottie-react";

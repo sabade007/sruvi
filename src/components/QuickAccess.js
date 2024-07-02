@@ -175,27 +175,596 @@ const QuickAccess = () => {
     }
   };
 
+  const DashboardSquare03Icon = (props) => (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      width={20}
+      height={20}
+      color={"#000000"}
+      fill={"none"}
+      {...props}
+    >
+      <path
+        d="M16 5C16 4.06812 16 3.60218 16.1522 3.23463C16.3552 2.74458 16.7446 2.35523 17.2346 2.15224C17.6022 2 18.0681 2 19 2C19.9319 2 20.3978 2 20.7654 2.15224C21.2554 2.35523 21.6448 2.74458 21.8478 3.23463C22 3.60218 22 4.06812 22 5V9C22 9.93188 22 10.3978 21.8478 10.7654C21.6448 11.2554 21.2554 11.6448 20.7654 11.8478C20.3978 12 19.9319 12 19 12C18.0681 12 17.6022 12 17.2346 11.8478C16.7446 11.6448 16.3552 11.2554 16.1522 10.7654C16 10.3978 16 9.93188 16 9V5Z"
+        stroke="currentColor"
+        strokeWidth="1.5"
+      />
+      <path
+        d="M16 19C16 18.0681 16 17.6022 16.1522 17.2346C16.3552 16.7446 16.7446 16.3552 17.2346 16.1522C17.6022 16 18.0681 16 19 16C19.9319 16 20.3978 16 20.7654 16.1522C21.2554 16.3552 21.6448 16.7446 21.8478 17.2346C22 17.6022 22 18.0681 22 19C22 19.9319 22 20.3978 21.8478 20.7654C21.6448 21.2554 21.2554 21.6448 20.7654 21.8478C20.3978 22 19.9319 22 19 22C18.0681 22 17.6022 22 17.2346 21.8478C16.7446 21.6448 16.3552 21.2554 16.1522 20.7654C16 20.3978 16 19.9319 16 19Z"
+        stroke="currentColor"
+        strokeWidth="1.5"
+      />
+      <path
+        d="M2 16C2 14.1144 2 13.1716 2.58579 12.5858C3.17157 12 4.11438 12 6 12H8C9.88562 12 10.8284 12 11.4142 12.5858C12 13.1716 12 14.1144 12 16V18C12 19.8856 12 20.8284 11.4142 21.4142C10.8284 22 9.88562 22 8 22H6C4.11438 22 3.17157 22 2.58579 21.4142C2 20.8284 2 19.8856 2 18V16Z"
+        stroke="currentColor"
+        strokeWidth="1.5"
+      />
+      <path
+        d="M2 5C2 4.06812 2 3.60218 2.15224 3.23463C2.35523 2.74458 2.74458 2.35523 3.23463 2.15224C3.60218 2 4.06812 2 5 2H9C9.93188 2 10.3978 2 10.7654 2.15224C11.2554 2.35523 11.6448 2.74458 11.8478 3.23463C12 3.60218 12 4.06812 12 5C12 5.93188 12 6.39782 11.8478 6.76537C11.6448 7.25542 11.2554 7.64477 10.7654 7.84776C10.3978 8 9.93188 8 9 8H5C4.06812 8 3.60218 8 3.23463 7.84776C2.74458 7.64477 2.35523 7.25542 2.15224 6.76537C2 6.39782 2 5.93188 2 5Z"
+        stroke="currentColor"
+        strokeWidth="1.5"
+      />
+    </svg>
+  );
+
   return (
-    <div className="zero:hidden sm:hidden md:hidden lg:block xl:block">
-      <Container maxWidth="xl" className="p-4">
-        <AnimateddivT2B>
-          <div className="p-4 bg-white">
+    <div>
+      <div className="zero:hidden sm:hidden md:hidden lg:block xl:block xxl:block">
+        <Container maxWidth="xl" className="p-4">
+          <AnimateddivT2B>
+            <div className="p-4 bg-gradient-to-r from-blueblack to-slate-800 mt-4  rounded-lg ">
+              <div className="flex flex-row items-center">
+                <DashboardSquare03Icon
+                  className="text-orange"
+                  fontSize="large"
+                />
+                <h1 className="text-xl text-orange  font-bungee ml-2 tracking-wide">
+                  {"Quick Access"}
+                </h1>
+              </div>
+              <h1 className="text-md text-white text-justify font-fira  mt-2">
+                {
+                  "Welcome to our Quick Access page! This single-page summary contains all the essential information you need. Whether you are a visitor or a regular, you will find everything conveniently organized here."
+                }
+              </h1>
+            </div>
+          </AnimateddivT2B>
+          <div className="flex grid grid-cols-10 mt-4 gap-4">
+            <div className=" col-span-4 p-4 bg-greyish">
+              <Animatediv>
+                <div className=" bg-white h-full flex flex-col justify-between p-4">
+                  {submitSuccess ? (
+                    <div className="flex flex-col justify-center items-center h-full">
+                      <CheckmarkBadge02Icon />
+                      <h1 className="text-black font-fira text-justify">
+                        {
+                          "Your journey begins with us! We've received your request, and our team is already on the move. Expect a prompt response from us soon. In the meantime, feel free to explore our services and get ready for an exciting collaboration. Thank you for choosing Sruvi Inc.!"
+                        }
+                      </h1>
+                    </div>
+                  ) : (
+                    <div>
+                      <FormControl
+                        style={{
+                          width: "100%",
+                          display: "flex",
+                          flexDirection: "column",
+                          height: "100%",
+                          justifyContent: "space-between",
+                        }}
+                      >
+                        <div className="flex flex-row items-center justify-center mb-4">
+                          <ConnectWithoutContact
+                            className="text-primary"
+                            fontSize="medium"
+                            style={{ marginRight: 10 }}
+                          />
+                          <h1 className="text-black text-2xl  font-bungee ">
+                            {"Keep Close, Stay Connected!"}
+                          </h1>
+                        </div>
+                        <FormHelperText
+                          id="my-helper-textss"
+                          className="text-justify mb-4"
+                        >
+                          {
+                            "We are excited to connect with you! Please take a moment to share your contact information so that we can reach out to you promptly."
+                          }
+                        </FormHelperText>
+
+                        <div className="mt-4">
+                          <TextField
+                            fullWidth
+                            sx={{
+                              "& .MuiOutlinedInput-root": {
+                                "& fieldset": {
+                                  borderColor: "black",
+                                },
+                                "&:hover fieldset": {
+                                  borderColor: "#black",
+                                },
+                                "&.Mui-focused fieldset": {
+                                  borderColor: "black",
+                                },
+                              },
+                            }}
+                            InputLabelProps={{
+                              style: {
+                                color: "black",
+                                fontFamily: "'Fira Sans', sans-serif",
+                              },
+                            }}
+                            InputProps={{
+                              startAdornment: (
+                                <InputAdornment position="start">
+                                  <AccountBox />
+                                </InputAdornment>
+                              ),
+                            }}
+                            size="small"
+                            id="name"
+                            label="Full Name"
+                            variant="outlined"
+                            value={name}
+                            onChange={handleNameChange}
+                            style={{
+                              fontFamily: "'Fira Sans', sans-serif",
+                            }}
+                            required
+                            className="mb-4"
+                          />
+                        </div>
+
+                        <h1 className="text-black  font-bungee mt-2">
+                          {"Contact Type:"}
+                        </h1>
+                        <div className="flex flex-row p-0 mb-4 ">
+                          <div
+                            className="  mr-4  cursor-pointer flex flex-row items-center"
+                            onClick={setMobileCheckedHandler}
+                          >
+                            <Phone
+                              style={{
+                                color: mobileChecked ? "#48C43C" : "black",
+                                fontSize: 20,
+                              }}
+                            />
+                            <h1
+                              className="p-1 text-black   font-bungee tracking-widest"
+                              style={{
+                                color: mobileChecked ? "#48C43C" : "black",
+                              }}
+                            >
+                              {" Mobile"}
+                            </h1>
+                          </div>
+                          <div
+                            className=" cursor-pointer flex flex-row items-center"
+                            onClick={setEmailCheckedHandler}
+                          >
+                            <Email
+                              style={{
+                                color: emailChecked ? "#48C43C" : "black",
+                                fontSize: 20,
+                              }}
+                            />
+                            <h1
+                              className="p-1 text-black  font-bungee tracking-widest"
+                              style={{
+                                color: emailChecked ? "#48C43C" : "black",
+                              }}
+                            >
+                              {" Email"}
+                            </h1>
+                          </div>
+                        </div>
+
+                        {mobileChecked ? (
+                          <TextField
+                            sx={{
+                              "& .MuiOutlinedInput-root": {
+                                "& fieldset": {
+                                  borderColor: "black",
+                                },
+                                "&:hover fieldset": {
+                                  borderColor: "#black",
+                                },
+                                "&.Mui-focused fieldset": {
+                                  borderColor: "black",
+                                },
+                              },
+                            }}
+                            InputLabelProps={{
+                              style: {
+                                color: "black",
+                                fontFamily: "'Fira Sans', sans-serif",
+                              },
+                            }}
+                            InputProps={{
+                              startAdornment: (
+                                <InputAdornment position="start">
+                                  <PhoneIphone />
+                                </InputAdornment>
+                              ),
+                            }}
+                            size="small"
+                            id="mobile"
+                            label="Mobile Number"
+                            variant="outlined"
+                            required
+                            style={{
+                              fontFamily: "'Fira Sans', sans-serif",
+                            }}
+                            value={mobileNumber}
+                            onChange={handleMobileChange}
+                          />
+                        ) : (
+                          <TextField
+                            sx={{
+                              "& .MuiOutlinedInput-root": {
+                                "& fieldset": {
+                                  borderColor: "black",
+                                },
+                                "&:hover fieldset": {
+                                  borderColor: "#black",
+                                },
+                                "&.Mui-focused fieldset": {
+                                  borderColor: "black",
+                                },
+                              },
+                            }}
+                            InputLabelProps={{
+                              style: {
+                                color: "black",
+                                fontFamily: "'Fira Sans', sans-serif",
+                              },
+                            }}
+                            InputProps={{
+                              startAdornment: (
+                                <InputAdornment position="start">
+                                  <AlternateEmail />
+                                </InputAdornment>
+                              ),
+                            }}
+                            size="small"
+                            id="email"
+                            label="E-mail Address"
+                            variant="outlined"
+                            required
+                            value={email}
+                            onChange={handleEmailChange}
+                            style={{
+                              fontFamily: "'Fira Sans', sans-serif",
+                            }}
+                          />
+                        )}
+
+                        {mobileChecked ? (
+                          <FormHelperText id="my-helper-text">
+                            {" We'll never share your Mobile Number."}
+                          </FormHelperText>
+                        ) : (
+                          <FormHelperText id="my-helper-text">
+                            {"We'll never share your email."}
+                          </FormHelperText>
+                        )}
+
+                        <h1 className="text-black  font-bungee mt-2 tracking-widest">
+                          {" What are you interested in?"}
+                        </h1>
+                        <FormHelperText className="mb-2">
+                          {"You can select multiple options"}
+                        </FormHelperText>
+                        <FormGroup>
+                          <div className="flex grid grid-cols-2 gap-4 mb-4">
+                            <FormControlLabel
+                              control={
+                                <Checkbox
+                                  style={{ color: "#48C43C" }}
+                                  checked={selectedOptions.includes("Website")}
+                                  onChange={handleChange}
+                                  value="Website"
+                                  name="Website"
+                                />
+                              }
+                              label={
+                                <h1 className="text-black font-bungee text-md">
+                                  {"Website Development"}
+                                </h1>
+                              }
+                            />
+                            <FormControlLabel
+                              control={
+                                <Checkbox
+                                  style={{ color: "#48C43C" }}
+                                  checked={selectedOptions.includes(
+                                    "Mobile Apps"
+                                  )}
+                                  onChange={handleChange}
+                                  value="Mobile Apps"
+                                  name="Mobile Apps"
+                                />
+                              }
+                              label={
+                                <h1 className="text-black font-bungee text-md">
+                                  {"Mobile Apps"}
+                                </h1>
+                              }
+                            />
+                          </div>
+                          <div className="flex grid grid-cols-2 gap-4 mb-4">
+                            <FormControlLabel
+                              control={
+                                <Checkbox
+                                  style={{ color: "#48C43C" }}
+                                  checked={selectedOptions.includes(
+                                    "Custom Software"
+                                  )}
+                                  onChange={handleChange}
+                                  value="Custom Software"
+                                  name="Custom Software"
+                                />
+                              }
+                              label={
+                                <h1 className="text-black font-bungee text-md">
+                                  {"Custom Software"}
+                                </h1>
+                              }
+                            />
+                            <FormControlLabel
+                              control={
+                                <Checkbox
+                                  style={{ color: "#48C43C" }}
+                                  checked={selectedOptions.includes(
+                                    "Cloud & DevOps"
+                                  )}
+                                  onChange={handleChange}
+                                  value="Cloud & DevOps"
+                                  name="Cloud & DevOps"
+                                />
+                              }
+                              label={
+                                <h1 className="text-black font-bungee text-md">
+                                  {"Cloud & DevOps"}
+                                </h1>
+                              }
+                            />
+                          </div>
+                        </FormGroup>
+
+                        <Button
+                          onClick={submit}
+                          variant="contained"
+                          style={{
+                            backgroundColor: "#48C43C",
+                          }}
+                        >
+                          <h1 className="text-white font-bungee text-md">
+                            {"Connect with us"}
+                          </h1>
+                        </Button>
+                      </FormControl>
+                    </div>
+                  )}
+                </div>
+              </Animatediv>
+            </div>
+
+            <div className="col-span-6 bg-greyish p-4">
+              <AnimateddivR2L>
+                <div className=" bg-white h-full flex flex-col justify-between p-4">
+                  <div className="">
+                    <h1 className="text-primary font-bungee text-xl  font-bungee">
+                      {" Introduction"}
+                    </h1>
+                    <h1 className="text-3xl text-black  font-bungee mb-2">
+                      {" You Think It, We Build It"}
+                    </h1>
+                    <h1 className="text-black font-fira text-justify">
+                      {
+                        "At Sruvi Inc, we are more than lines of code; we are architects of innovation. Our mission? To transform ideas into elegant software solutions that propel businesses forward."
+                      }
+                    </h1>
+                  </div>
+                  <div>
+                    <h1 className="text-primary font-bungee text-lg">
+                      {"Why we stand out ?"}
+                    </h1>
+                    <div className="grid grid-cols-2 gap-4">
+                      <div className="col-span-1 p-2  items-center flex flex-row">
+                        <div className="flex flex-col mr-2 justify-center">
+                          <div className="bg-primary h-1 w-1 rounded"></div>
+                          <div className="bg-black h-1 w-1  rounded"></div>
+                          <div className="bg-primary h-1 w-1  rounded"></div>
+                        </div>
+
+                        <h1 className="text-black  text-md font-fira ">
+                          {"Bengaluru Roots, Global Impact"}
+                        </h1>
+                      </div>
+                      <div className=" col-span-1 p-2  items-center flex">
+                        <div className="flex flex-col mr-2 justify-center">
+                          <div className="bg-primary h-1 w-1 rounded"></div>
+                          <div className="bg-black h-1 w-1  rounded"></div>
+                          <div className="bg-primary h-1 w-1  rounded"></div>
+                        </div>
+                        <h1 className="text-black  text-md font-fira ">
+                          {"Crafting Digital Experiences"}
+                        </h1>
+                      </div>
+                      <div className=" col-span-1 p-2  items-center flex">
+                        <div className="flex flex-col mr-2 justify-center">
+                          <div className="bg-primary h-1 w-1 rounded"></div>
+                          <div className="bg-black h-1 w-1  rounded"></div>
+                          <div className="bg-primary h-1 w-1  rounded"></div>
+                        </div>
+                        <h1 className="text-black  text-md font-fira ">
+                          {"Agile Development, Impeccable Execution"}
+                        </h1>
+                      </div>
+                      <div className=" col-span-1 p-2  items-center flex">
+                        <div className="flex flex-col mr-2 justify-center">
+                          <div className="bg-primary h-1 w-1 rounded"></div>
+                          <div className="bg-black h-1 w-1  rounded"></div>
+                          <div className="bg-primary h-1 w-1  rounded"></div>
+                        </div>
+                        <h1 className="text-black  text-md font-fira ">
+                          {"Innovate, Iterate, Elevate"}
+                        </h1>
+                      </div>
+                      <div className=" col-span-1 p-2  items-center flex">
+                        <div className="flex flex-col mr-2 justify-center">
+                          <div className="bg-primary h-1 w-1 rounded"></div>
+                          <div className="bg-black h-1 w-1  rounded"></div>
+                          <div className="bg-primary h-1 w-1  rounded"></div>
+                        </div>
+                        <h1 className="text-black  text-md font-fira">
+                          {" Client-Centric Approach"}
+                        </h1>
+                      </div>
+                      <div className="col-span-1 p-2  items-center flex">
+                        <div className="flex flex-col mr-2 justify-center">
+                          <div className="bg-primary h-1 w-1 rounded"></div>
+                          <div className="bg-black h-1 w-1  rounded"></div>
+                          <div className="bg-primary h-1 w-1  rounded"></div>
+                        </div>
+                        <h1 className="text-black  text-md font-fira ">
+                          {"Proprietary Technology"}
+                        </h1>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <h1 className="text-primary font-bungee tracking-widest text-lg ">
+                      Our Team
+                    </h1>
+                    <h1 className="text-md text-black  font-fira text-justify">
+                      {
+                        "At SRUVI Inc, our team is not just a workforce; we are a family fueled by passion and purpose. Together, we build the future—one line of code at a time."
+                      }
+                    </h1>
+                  </div>
+                </div>
+              </AnimateddivR2L>
+            </div>
+          </div>
+        </Container>
+      </div>
+
+      <div className="zero:block sm:block md:block lg:hidden xl:hidden xxl:hidden">
+        <Container maxWidth="xl" className="p-4">
+          <div className="p-4 bg-gradient-to-r from-blueblack to-slate-800 rounded-lg">
             <div className="flex flex-row items-center">
-              <AcUnitIcon className="text-primary" fontSize="large" />
-              <h1 className="text-2xl text-black  font-bungee ml-2 tracking-wide">
+              <DashboardSquare03Icon className="text-orange" fontSize="small" />
+              <h1 className="text-lg text-orange  font-bungee ml-2 tracking-wide">
                 {"Quick Access"}
               </h1>
             </div>
-            <h1 className="text-md text-black  font-fira  ml-10">
+            <h1 className="text-sm text-white  font-fira  text-justify ">
               {
                 "Welcome to our Quick Access page! This single-page summary contains all the essential information you need. Whether you are a visitor or a regular, you will find everything conveniently organized here."
               }
             </h1>
           </div>
-        </AnimateddivT2B>
-        <div className="flex grid grid-cols-10 mt-4 gap-4">
-          <div className=" col-span-4 p-4 bg-greyish">
-            <Animatediv>
+
+          <div className="flex grid grid-cols-10 mt-4 gap-4">
+            <div className="col-span-10 bg-greyish p-4 rounded-lg">
+              <div className=" bg-white h-full flex flex-col justify-between rounded-lg p-4">
+                <div className="">
+                  <h1 className="text-orange font-bungee text-md tracking-wide font-bungee">
+                    {" Introduction"}
+                  </h1>
+                  <h1 className="text-xl text-black  font-bungee mb-2">
+                    {" You Think It, We Build It"}
+                  </h1>
+                  <h1 className="text-black font-fira text-sm text-justify">
+                    {
+                      "At Sruvi Inc, we are more than lines of code; we are architects of innovation. Our mission? To transform ideas into elegant software solutions that propel businesses forward."
+                    }
+                  </h1>
+                </div>
+                <div>
+                  <h1 className="text-orange font-bungee tracking-wide text-md mt-2">
+                    {"Why we stand out ?"}
+                  </h1>
+                  <div className="grid grid-cols-2 gap-2">
+                    <div className="col-span-1 p-2  items-center flex flex-row">
+                      <div className="flex flex-col mr-2 justify-center">
+                        <div className="bg-primary h-1 w-1 rounded"></div>
+                        <div className="bg-black h-1 w-1  rounded"></div>
+                        <div className="bg-primary h-1 w-1  rounded"></div>
+                      </div>
+
+                      <h1 className="text-black  text-sm font-fira ">
+                        {"Bengaluru Roots, Global Impact"}
+                      </h1>
+                    </div>
+                    <div className=" col-span-1 p-2  items-center flex">
+                      <div className="flex flex-col mr-2 justify-center">
+                        <div className="bg-primary h-1 w-1 rounded"></div>
+                        <div className="bg-black h-1 w-1  rounded"></div>
+                        <div className="bg-primary h-1 w-1  rounded"></div>
+                      </div>
+                      <h1 className="text-black  text-sm font-fira ">
+                        {"Crafting Digital Experiences"}
+                      </h1>
+                    </div>
+                    <div className=" col-span-1 p-2  items-center flex">
+                      <div className="flex flex-col mr-2 justify-center">
+                        <div className="bg-primary h-1 w-1 rounded"></div>
+                        <div className="bg-black h-1 w-1  rounded"></div>
+                        <div className="bg-primary h-1 w-1  rounded"></div>
+                      </div>
+                      <h1 className="text-black  text-sm font-fira ">
+                        {"Agile Development, Impeccable Execution"}
+                      </h1>
+                    </div>
+                    <div className=" col-span-1 p-2  items-center flex">
+                      <div className="flex flex-col mr-2 justify-center">
+                        <div className="bg-primary h-1 w-1 rounded"></div>
+                        <div className="bg-black h-1 w-1  rounded"></div>
+                        <div className="bg-primary h-1 w-1  rounded"></div>
+                      </div>
+                      <h1 className="text-black  text-sm font-fira ">
+                        {"Innovate, Iterate, Elevate"}
+                      </h1>
+                    </div>
+                    <div className=" col-span-1 p-2  items-center flex">
+                      <div className="flex flex-col mr-2 justify-center">
+                        <div className="bg-primary h-1 w-1 rounded"></div>
+                        <div className="bg-black h-1 w-1  rounded"></div>
+                        <div className="bg-primary h-1 w-1  rounded"></div>
+                      </div>
+                      <h1 className="text-black  text-sm font-fira">
+                        {" Client-Centric Approach"}
+                      </h1>
+                    </div>
+                    <div className="col-span-1 p-2  items-center flex">
+                      <div className="flex flex-col mr-2 justify-center">
+                        <div className="bg-primary h-1 w-1 rounded"></div>
+                        <div className="bg-black h-1 w-1  rounded"></div>
+                        <div className="bg-primary h-1 w-1  rounded"></div>
+                      </div>
+                      <h1 className="text-black  text-sm font-fira ">
+                        {"Proprietary Technology"}
+                      </h1>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <h1 className="text-orange font-bungee tracking-wide text-md ">
+                    Our Team
+                  </h1>
+                  <h1 className="text-sm text-black  font-fira text-justify">
+                    {
+                      "At SRUVI Inc, our team is not just a workforce; we are a family fueled by passion and purpose. Together, we build the future—one line of code at a time."
+                    }
+                  </h1>
+                </div>
+              </div>
+            </div>
+            <div className=" col-span-10 p-4 bg-greyish">
               <div className=" bg-white h-full flex flex-col justify-between p-4">
                 {submitSuccess ? (
                   <div className="flex flex-col justify-center items-center h-full">
@@ -511,108 +1080,10 @@ const QuickAccess = () => {
                   </div>
                 )}
               </div>
-            </Animatediv>
+            </div>
           </div>
-
-          <div className="col-span-6 bg-greyish p-4">
-            <AnimateddivR2L>
-              <div className=" bg-white h-full flex flex-col justify-between p-4">
-                <div className="">
-                  <h1 className="text-primary font-bungee text-xl  font-bungee">
-                    {" Introduction"}
-                  </h1>
-                  <h1 className="text-3xl text-black  font-bungee mb-2">
-                    {" You Think It, We Build It"}
-                  </h1>
-                  <h1 className="text-black font-fira text-justify">
-                    {
-                      "At Sruvi Inc, we are more than lines of code; we are architects of innovation. Our mission? To transform ideas into elegant software solutions that propel businesses forward."
-                    }
-                  </h1>
-                </div>
-                <div>
-                  <h1 className="text-primary font-bungee text-lg">
-                    {"Why we stand out ?"}
-                  </h1>
-                  <div className="grid grid-cols-2 gap-4">
-                    <div className="col-span-1 p-2  items-center flex flex-row">
-                      <div className="flex flex-col mr-2 justify-center">
-                        <div className="bg-primary h-1 w-1 rounded"></div>
-                        <div className="bg-black h-1 w-1  rounded"></div>
-                        <div className="bg-primary h-1 w-1  rounded"></div>
-                      </div>
-
-                      <h1 className="text-black  text-md font-fira ">
-                        {"Bengaluru Roots, Global Impact"}
-                      </h1>
-                    </div>
-                    <div className=" col-span-1 p-2  items-center flex">
-                      <div className="flex flex-col mr-2 justify-center">
-                        <div className="bg-primary h-1 w-1 rounded"></div>
-                        <div className="bg-black h-1 w-1  rounded"></div>
-                        <div className="bg-primary h-1 w-1  rounded"></div>
-                      </div>
-                      <h1 className="text-black  text-md font-fira ">
-                        {"Crafting Digital Experiences"}
-                      </h1>
-                    </div>
-                    <div className=" col-span-1 p-2  items-center flex">
-                      <div className="flex flex-col mr-2 justify-center">
-                        <div className="bg-primary h-1 w-1 rounded"></div>
-                        <div className="bg-black h-1 w-1  rounded"></div>
-                        <div className="bg-primary h-1 w-1  rounded"></div>
-                      </div>
-                      <h1 className="text-black  text-md font-fira ">
-                        {"Agile Development, Impeccable Execution"}
-                      </h1>
-                    </div>
-                    <div className=" col-span-1 p-2  items-center flex">
-                      <div className="flex flex-col mr-2 justify-center">
-                        <div className="bg-primary h-1 w-1 rounded"></div>
-                        <div className="bg-black h-1 w-1  rounded"></div>
-                        <div className="bg-primary h-1 w-1  rounded"></div>
-                      </div>
-                      <h1 className="text-black  text-md font-fira ">
-                        {"Innovate, Iterate, Elevate"}
-                      </h1>
-                    </div>
-                    <div className=" col-span-1 p-2  items-center flex">
-                      <div className="flex flex-col mr-2 justify-center">
-                        <div className="bg-primary h-1 w-1 rounded"></div>
-                        <div className="bg-black h-1 w-1  rounded"></div>
-                        <div className="bg-primary h-1 w-1  rounded"></div>
-                      </div>
-                      <h1 className="text-black  text-md font-fira">
-                        {" Client-Centric Approach"}
-                      </h1>
-                    </div>
-                    <div className="col-span-1 p-2  items-center flex">
-                      <div className="flex flex-col mr-2 justify-center">
-                        <div className="bg-primary h-1 w-1 rounded"></div>
-                        <div className="bg-black h-1 w-1  rounded"></div>
-                        <div className="bg-primary h-1 w-1  rounded"></div>
-                      </div>
-                      <h1 className="text-black  text-md font-fira ">
-                        {"Proprietary Technology"}
-                      </h1>
-                    </div>
-                  </div>
-                </div>
-                <div>
-                  <h1 className="text-primary font-bungee tracking-widest text-lg ">
-                    Our Team
-                  </h1>
-                  <h1 className="text-md text-black  font-fira text-justify">
-                    {
-                      "At SRUVI Inc, our team is not just a workforce; we are a family fueled by passion and purpose. Together, we build the future—one line of code at a time."
-                    }
-                  </h1>
-                </div>
-              </div>
-            </AnimateddivR2L>
-          </div>
-        </div>
-      </Container>
+        </Container>
+      </div>
     </div>
   );
 };
